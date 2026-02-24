@@ -34,4 +34,4 @@ This repository documents my learning journey and practical work in data analysi
 
 ## Author
 
-Karam Yassin
+Karam Yaseen
