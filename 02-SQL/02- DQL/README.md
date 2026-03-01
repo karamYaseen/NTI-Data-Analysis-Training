@@ -73,4 +73,4 @@ Try to create the following Queries:
 ## Notes
 
 - All queries are written using standard SQL.
-- Tasks focus on SELECT statements, filtering, joins, aggregation, subqueries, and basic DML operations.
+- Tasks focus on SELECT statements, filtering, joins, aggregation, and basic DML operations.
