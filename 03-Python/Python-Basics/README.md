@@ -53,11 +53,5 @@ After completing this section, you should be able to:
 - Implement basic algorithms and data processing
 - Write clean, readable Python code
 
-## Next Steps
-
-The next section will cover **unordered sequences** including:
-- Sets (unique collections)
-- Dictionaries (key-value mappings)
-
 ## Author
 Karam Yaseen
