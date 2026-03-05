@@ -107,3 +107,5 @@ print("="*50)
 numbers = list(range(1, 21))
 squares = [num ** 2 for num in numbers]
 print("Squares of integers from 1 to 20:", squares)
+
+
