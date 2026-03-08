@@ -1,10 +1,11 @@
 # 1. Write a function that accepts two arguments (length, start) to
 #   generate an array of a specific length filled with integer numbers
 #   increased by one from start.
+print("="*50)
+print("First Problem:")
+print("="*50)
 
 import re
-
-
 def generate_array(length, start):
     return [start + i for i in range(length)]
 
@@ -13,6 +14,9 @@ length = int(input("Enter the length of the array: "))
 start = int(input("Enter the starting number: "))
 print("Generated array:", generate_array(length, start))
 
+print("="*50)
+print("Second Problem:")
+print("="*50)
 
 # 2. write a function that takes a number as an argument and if the
 #   numberdivisible by 3 return "Fizz" and if it is divisible by 5 return
@@ -31,6 +35,9 @@ def fizz_buzz(n):
 number = int(input("Enter a number: "))
 print(fizz_buzz(number))
 
+print("="*50)
+print("Third Problem:")
+print("="*50)
 
 # 3. Write a function which has an input of a string from user then it
 #   will return the same string reversed.
@@ -46,6 +53,9 @@ print("Reversed string:", reverse_string(user_input))
 #   name(not an empty string/integers). then proceed to ask him for
 #   his email and print all this data check if it is a valid email
 #   or not using regex.
+print("="*50)
+print("Fourth Problem:")
+print("="*50)
 
 
 def is_valid_email(email):
@@ -59,11 +69,14 @@ if not name.strip() or name.isdigit():
     name = input("Enter your name: ")
 
 email = input("Enter your email: ")
-while not is_valid_email(email):
+if not is_valid_email(email):
     print("Invalid email. Please enter a valid email.")
     email = input("Enter your email: ")
 print(f"Name: {name}, Email: {email}")
 
+print("="*50)
+print("Fifth Problem:")
+print("="*50)
 
 # 5. Write a function that takes a string and prints the
 #   longest alphabetical ordered substring occurred For example, if
@@ -84,6 +97,9 @@ def longest_alphabetical_substring(s):
 input_string = input("Enter a string: ")
 print(f"Longest substring in alphabetical order is: {longest_alphabetical_substring(input_string)}")
 
+print("="*50)
+print("Sixth Problem:")
+print("="*50)
 
 # 6. String Compression
 #   Implement a function that compresses a string using the counts of repeated characters. 
@@ -107,6 +123,9 @@ def compress_string(s):
 input_string = input("Enter a string to compress: ")
 print("Compressed string:", compress_string(input_string))
 
+print("="*50)
+print("Seventh Problem:")
+print("="*50)
 
 # 7. Rotate Matrix
 #   Create a function that rotates a square matrix (2D list) 90 degrees clockwise in place.
@@ -132,19 +151,27 @@ print("\nRotated matrix:")
 for row in rotated:
     print(row)
 
+print("="*50)
+print("Eighth Problem:")
+print("="*50)
+
 # Make simple Game card By using class
 class Card:
-    def __init__(self, suit, rank):
+    def __init__(self, suit, rank, value):
         self.suit = suit
         self.rank = rank
+        self.value = value
 
     def __str__(self):
         return f"{self.rank} of {self.suit}"
 
 suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
 ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', 'Ace']
-deck = [Card(suit, rank) for suit in suits for rank in ranks]
+values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+
+deck = [Card(suit, rank, value) for suit in suits
+                                for rank in ranks 
+                                for value in values]
 print("Deck of cards:")
 for card in deck:
-    print(card)
-
+    print(f"{card} (Value: {card.value})")
