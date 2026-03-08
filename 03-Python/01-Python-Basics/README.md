@@ -45,7 +45,7 @@ Practical coding tasks covering:
 - `python_guide.py` - Complete explanation guide for Python basics and sequences
 - `python_basics.py` - Code examples of basic Python concepts
 - `sequences.py` - Examples of ordered sequences (lists, tuples, strings)
-- `List_first_Lap.py` - Programming exercises with solutions
+- `day1_exercises.py` - Programming exercises with solutions
 
 ## Learning Objectives
 

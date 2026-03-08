@@ -49,7 +49,7 @@ Designing programs with classes and objects:
 - `README.md` - This documentation file
 - `functions.py` - Comprehensive guide for functions
 - `oop.py` - Comprehensive guide for OOP concepts
-- `Third_Lab.py` - Programming exercises and solutions
+- `day3_exercises.py` - Programming exercises and solutions
 
 ## Learning Objectives
 

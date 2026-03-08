@@ -43,7 +43,7 @@ Practical coding tasks covering:
 - `unordered_sequences.py` - Guide for Sets and Dictionaries
 - `control_flow.py` - Guide for conditional statements and loops
 - `exception_handling.py` - Error handling techniques
-- `Second_Lab.py` - Exercise solutions
+- `day2_exercises.py` - Exercise solutions
 
 ## Learning Objectives
 
