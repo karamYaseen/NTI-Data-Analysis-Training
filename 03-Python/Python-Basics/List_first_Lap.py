@@ -1,5 +1,4 @@
-# 1.Fill an array of 5 elements from the user, Sort it in descending
-# and ascending orders then display the output.
+# 1.Fill an array of 5 elements from the user, Sort it in descending and ascending orders then display the output.
 print("="*50)
 print("First Problem:")
 print("="*50)

@@ -2,6 +2,10 @@
 
 This section contains comprehensive Python programming materials covering basic concepts, data structures, and practical exercises.
 
+# Python Programming Fundamentals - First Day
+
+This section contains Python programming materials covering basic concepts and ordered sequences (lists, tuples, strings).
+
 ## Topics Covered
 
 ### 1. Python Basics
@@ -15,7 +19,7 @@ Fundamental Python concepts including:
 - **Boolean Logic**: Truthiness, comparison operators, boolean conversion
 - **Identity vs Equality**: `is` vs `==`, membership testing (`in`)
 
-### 2. Sequences (Ordered)
+### 2. Ordered Sequences
 Ordered sequence data structures:
 - **Lists**: Creation, indexing, modification, operations
   - Adding/removing elements (append, pop, remove, del)
@@ -34,11 +38,19 @@ Practical coding tasks covering:
 - **List Manipulation**: Creation, access patterns, reversal
 - **Iteration**: Using enumerate() function
 - **List Comprehensions**: Creating derived lists
+Practical coding tasks covering:
+- **Array Operations**: User input, sorting (ascending/descending)
+- **Mathematical Functions**: Multiplication tables, factorial calculation
+- **Calculator Program**: Arithmetic operations with error handling
+- **String Formatting**: F-strings, variable display
+- **List Manipulation**: Creation, access patterns, reversal
+- **Iteration**: Using enumerate() function
+- **List Comprehensions**: Creating derived lists
 
 ## Files in This Folder
 
 - `README.md` - This documentation file
-- `python_guide.py` - **📚 Complete explanation guide** - Detailed explanations of all concepts with examples
+- `python_guide.py` - Complete explanation guide for Python basics and sequences
 - `python_basics.py` - Code examples of basic Python concepts
 - `sequences.py` - Examples of ordered sequences (lists, tuples, strings)
 - `List_first_Lap.py` - Programming exercises with solutions
