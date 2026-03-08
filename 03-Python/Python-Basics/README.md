@@ -38,14 +38,6 @@ Practical coding tasks covering:
 - **List Manipulation**: Creation, access patterns, reversal
 - **Iteration**: Using enumerate() function
 - **List Comprehensions**: Creating derived lists
-Practical coding tasks covering:
-- **Array Operations**: User input, sorting (ascending/descending)
-- **Mathematical Functions**: Multiplication tables, factorial calculation
-- **Calculator Program**: Arithmetic operations with error handling
-- **String Formatting**: F-strings, variable display
-- **List Manipulation**: Creation, access patterns, reversal
-- **Iteration**: Using enumerate() function
-- **List Comprehensions**: Creating derived lists
 
 ## Files in This Folder
 
