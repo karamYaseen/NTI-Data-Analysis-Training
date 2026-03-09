@@ -1,11 +1,12 @@
 # 1. Write a function that accepts two arguments (length, start) to
 #   generate an array of a specific length filled with integer numbers
 #   increased by one from start.
+import re
 print("="*50)
 print("First Problem:")
 print("="*50)
 
-import re
+
 def generate_array(length, start):
     return [start + i for i in range(length)]
 
@@ -21,6 +22,8 @@ print("="*50)
 # 2. write a function that takes a number as an argument and if the
 #   numberdivisible by 3 return "Fizz" and if it is divisible by 5 return
 #   "buzz" and if is is divisible by both return "FizzBuzz"
+
+
 def fizz_buzz(n):
     if n % 3 == 0 and n % 5 == 0:
         return "FizzBuzz"
@@ -41,6 +44,8 @@ print("="*50)
 
 # 3. Write a function which has an input of a string from user then it
 #   will return the same string reversed.
+
+
 def reverse_string(s):
     return s[::-1]
 
@@ -82,6 +87,8 @@ print("="*50)
 #   longest alphabetical ordered substring occurred For example, if
 #   the string is 'abdulrahman' then the output is: Longest substring in
 #   alphabetical order is: abdu
+
+
 def longest_alphabetical_substring(s):
     longest = current = s[0]
     for i in range(1, len(s)):
@@ -95,16 +102,19 @@ def longest_alphabetical_substring(s):
 
 
 input_string = input("Enter a string: ")
-print(f"Longest substring in alphabetical order is: {longest_alphabetical_substring(input_string)}")
+print(
+    f"Longest substring in alphabetical order is: {longest_alphabetical_substring(input_string)}")
 
 print("="*50)
 print("Sixth Problem:")
 print("="*50)
 
 # 6. String Compression
-#   Implement a function that compresses a string using the counts of repeated characters. 
-#   For example, the string "aabcccccaaa" would become "a2b1c5a3". 
+#   Implement a function that compresses a string using the counts of repeated characters.
+#   For example, the string "aabcccccaaa" would become "a2b1c5a3".
 #   If the compressed string is not shorter than the original, return the original string.
+
+
 def compress_string(s):
     if len(s) <= 1:
         return s
@@ -117,8 +127,9 @@ def compress_string(s):
             compressed += s[i - 1] + str(count)
             count = 1
     compressed += s[-1] + str(count)
-    
+
     return compressed if len(compressed) < len(s) else s
+
 
 input_string = input("Enter a string to compress: ")
 print("Compressed string:", compress_string(input_string))
@@ -129,6 +140,8 @@ print("="*50)
 
 # 7. Rotate Matrix
 #   Create a function that rotates a square matrix (2D list) 90 degrees clockwise in place.
+
+
 def rotate_matrix(matrix):
     n = len(matrix)
     for i in range(n):
@@ -137,6 +150,8 @@ def rotate_matrix(matrix):
     for i in range(n):
         matrix[i].reverse()
     return matrix
+
+
 matrix = [
     [1, 2, 3],
     [4, 5, 6],
@@ -156,6 +171,8 @@ print("Eighth Problem:")
 print("="*50)
 
 # Make simple Game card By using class
+
+
 class Card:
     def __init__(self, suit, rank, value):
         self.suit = suit
@@ -165,13 +182,15 @@ class Card:
     def __str__(self):
         return f"{self.rank} of {self.suit}"
 
+
 suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
-ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', 'Ace']
+ranks = ['2', '3', '4', '5', '6', '7', '8',
+         '9', '10', 'Jack', 'Queen', 'King', 'Ace']
 values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 
 deck = [Card(suit, rank, value) for suit in suits
-                                for rank in ranks 
-                                for value in values]
+        for rank in ranks
+        for value in values]
 print("Deck of cards:")
 for card in deck:
     print(f"{card} (Value: {card.value})")
