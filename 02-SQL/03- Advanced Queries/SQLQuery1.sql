@@ -1,3 +1,11 @@
+-- ================================================================
+-- Advanced SQL Queries (14+ Complex Tasks)
+-- ================================================================
+-- Purpose: Complex queries with UNION, GROUP BY, subqueries, JOINs
+-- Date: March 9, 2026
+-- Topics: UNION, aggregation, subqueries, MAX/MIN/AVG, set operations
+-- ================================================================
+
 /*
 1.	Display (Using Union Function)
 	a.	 The name and the gender of the dependence that's gender is Female and depending on Female Employee.
@@ -142,7 +150,7 @@ DELETE FROM Employee
 WHERE SSN = 223344;
 
 /*
-14.	Try to update all salaries of employees who work in Project ‘Al Rabwah’ by 30%
+14.	Try to update all salaries of employees who work in Project ï¿½Al Rabwahï¿½ by 30%
 */
 
 UPDATE Employee

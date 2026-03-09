@@ -386,10 +386,28 @@ JOIN departments d ON e.dept_no = d.dept_no;
 - Comments in query files explain the intent and technique
 - Solution files show working implementations
 
+
+## � Recent Updates
+
+**Documentation Enhanced (March 9, 2026):**
+- Added Quick Start guide (5 minutes)
+- Added Prerequisites & Requirements (Knowledge & Software)
+- Added Environment Setup (Windows & macOS/Linux)
+- Added Comprehensive Tips for Success
+- Added Common Issues & Solutions
+- Added Success Checkpoints
+- Added Safety Practices section
+- Added SQL file headers with documentation
+
+**Subfolder Status:**
+- Create DB & Insert Data: Complete with DDL/DML
+- DQL (Basic Queries): Complete with 9 tasks
+- Advanced Queries: Complete with 14+ tasks
+
 ## 👤 Author
 
 Karam Yaseen
 
 ---
 
-**Last Updated**: March 5, 2026
+**Last Updated**: March 9, 2026

@@ -1,3 +1,11 @@
+-- ================================================================
+-- SQL Database Creation Script (DDL - Data Definition Language)
+-- ================================================================
+-- Purpose: Create database tables with proper constraints and relationships
+-- Date: March 9, 2026
+-- Tables: Dept, Employee, Locations, Project, Dependent, Work
+-- ================================================================
+
 create table Dept (
 	Dnum int NOT NULL Primary key ,
 	hiredate date null,

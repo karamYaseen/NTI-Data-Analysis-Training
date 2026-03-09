@@ -1,3 +1,12 @@
+-- ================================================================
+-- SQL Data Insertion Script (DML - Data Manipulation Language)
+-- ================================================================
+-- Purpose: Insert sample data into created tables
+-- Date: March 9, 2026
+-- Tables: Dept, Employee, Locations, Project, Dependent, Work
+-- Note: Execute Create DB.sql first before running this script
+-- ================================================================
+
 -- Dept
 INSERT INTO Dept (Dnum, hiredate, DName, Dno, MrgSSN)
 VALUES

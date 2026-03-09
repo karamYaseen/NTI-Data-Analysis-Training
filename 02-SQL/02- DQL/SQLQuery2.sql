@@ -1,3 +1,11 @@
+-- ================================================================
+-- DQL Basic Query Examples (Tasks 1-9)
+-- ================================================================
+-- Purpose: Demonstrate fundamental SQL SELECT queries with JOINs
+-- Date: March 9, 2026
+-- Topics: INNER JOIN, WHERE conditions, column aliases
+-- ================================================================
+
 -- task 1 (Display the Department id, name and id and the name of its manager.)
 select d.Dnum as [Department id], d.Dname as [Department name ], 
 d.MGRSSN as [manager id], e.fname + ' ' + lname as [Manager name ]

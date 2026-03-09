@@ -1,3 +1,11 @@
+-- ================================================================
+-- DQL Query Examples - Additional Tasks
+-- ================================================================
+-- Purpose: Additional basic DQL query examples with filtering
+-- Date: March 9, 2026
+-- Topics: SELECT columns, WHERE conditions, calculations, ORDER BY
+-- ================================================================
+
 -- task 1
 select * from Employee
 
