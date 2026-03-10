@@ -1,6 +1,6 @@
 import pandas as pd 
 
-df_sales = pd.read_csv('Data\\sales.csv')
+df_sales = pd.read_csv('C:\\Users\\yasee\\NTI-Data-Analysis-Training\\03-Python\\04-numby-Pandas\\Data\\sales.csv')
 
 print("First 5 rows:")
 print(df_sales.head()) 
@@ -12,9 +12,9 @@ print("\nStatistics:")
 print(df_sales.describe())
 
 
-product_price = df_sales[['Product', 'Price']]
+Product_price = df_sales[['Product', 'Price']]
 print("\nProduct Price:")
-print(product_price)
+print(Product_price)
 
 high_quantity = df_sales[df_sales['Quantity'] > 10]
 print("\nHigh Quantity Sales:") 
@@ -25,7 +25,7 @@ print("\nSales sorted by Price (descending):")
 print(sorted_sales)
 
 df_sales['Quantity'] = df_sales['Quantity'].fillna(0)
-df_sales = df_sales.dropna(subset=['Price'], inplace=True)
+df_sales.dropna(subset=['Price'], inplace=True)
 print("\nData after handling missing values:")
 print(df_sales)
 
@@ -39,22 +39,21 @@ print("\nFiltered and Sorted Sales:")
 print(filtered_sales)
 
 # -*-*-*-*-*--*
-df_products = pd.read_csv('Data\\products.csv')
+df_Products = pd.read_csv('C:\\Users\\yasee\\NTI-Data-Analysis-Training\\03-Python\\04-numby-Pandas\\Data\\Products.csv')
 print("\nProducts Data:")
-print(df_products.head())
+print(df_Products.head())
 
-merged_df = pd.merge(df_sales, df_products, on='Product', how='left')
+merged_df = pd.merge(df_sales, df_Products, left_on='Product', right_on='Product_Name', how='left')
 print("\nMerged Data:")
 print(merged_df.head())
 
-
 merged_df['Category'] = merged_df['Category'].str.upper()
-merged_df['SupplierInitial'] = merged_df['Supplier'].str[0]
+merged_df['CategoryInitial'] = merged_df['Category'].str[0]
 print("\nData after string operations:")
 print(merged_df.head())
 
-merged_df['Date'] = pd.to_datetime(merged_df['Date'])
-merged_df['Month'] = merged_df['Date'].dt.month
+merged_df['Sale_Date'] = pd.to_datetime(merged_df['Sale_Date'])
+merged_df['Month'] = merged_df['Sale_Date'].dt.month
 print("\nData after date conversion and month extraction:")
 print(merged_df.head())
 
