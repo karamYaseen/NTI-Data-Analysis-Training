@@ -1,6 +1,6 @@
 import pandas as pd 
 
-df_sales = pd.read_csv('sales.csv')
+df_sales = pd.read_csv('Data\\sales.csv')
 
 print("First 5 rows:")
 print(df_sales.head()) 
@@ -39,7 +39,7 @@ print("\nFiltered and Sorted Sales:")
 print(filtered_sales)
 
 # -*-*-*-*-*--*
-df_products = pd.read_csv('products.csv')
+df_products = pd.read_csv('Data\\products.csv')
 print("\nProducts Data:")
 print(df_products.head())
 
