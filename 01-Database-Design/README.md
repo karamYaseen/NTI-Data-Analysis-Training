@@ -2,13 +2,7 @@
 
 This section contains comprehensive database design materials covering Entity-Relationship Diagrams (ERD), normalization, and relational mapping concepts.
 
-## 🚀 Quick Start
-
-1. Read `database_design_concepts.py` for basics
-2. Do Problem 1 (Musicana) then 2–4 in order
-3. Compare your ERD and mapping with the solutions
-
-## 📚 Prerequisites
+## Prerequisites
 
 - Understand tables, keys, and simple relationships
 - Can read diagrams
@@ -43,13 +37,6 @@ Each mapping problem converts the corresponding ERD into:
 - Normalized schema (1NF, 2NF, 3NF)
 - SQL table creation scripts
 
-## Learning Goals
-
-- Draw ERDs
-- Normalize schemas
-- Map ERD to tables
-- Explain relationships and cardinality
-
 ## How to Use
 
 1. Read the concepts file.
@@ -57,39 +44,23 @@ Each mapping problem converts the corresponding ERD into:
 3. Map ERD to tables and compare.
 4. Repeat; work alone or with peers.
 
-## 💡 Tips
+#### Tips
 
-- Start ERD with entities, then add relationships
-- Normalize to 3NF but don’t overthink it
-- Draw first, map later
-- Avoid redundant attributes and missing relations
+    - Start ERD with entities, then add relationships
+    - Normalize to 3NF but don’t overthink it
+    - Draw first, map later
+    - Avoid redundant attributes and missing relations
+    
 
-## ✅ What Success Looks Like
-
-- Identify entities and relationships
-- Normalize to 3NF
-- Convert ERD to tables
-
-## 🎯 Workflow
-1. Read problem description
-2. Draw ERD by yourself
-3. Compare with solution
-4. Map to tables
-5. Repeat for next problem
-
-## 🔗 Related Resources
+## Related Resources
 
 These materials lead to:
 - **SQL Module** (../02-SQL/): Implement these designs using SQL
-- **Data Modeling**: Work with actual databases
-- **Database Administration**: Manage and optimize designs
 
 ## Tools and Technologies
 
 - **ERD Design**: Mermaid, Draw.io
-- **Database Management**: MySQL
 - **Documentation**: Markdown, GitHub
-
 
 
 ## Author
