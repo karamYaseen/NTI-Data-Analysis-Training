@@ -60,3 +60,4 @@ print(merged_df.head())
 grouped_df = merged_df.groupby(['Category', 'Month'])['Total'].sum()
 print("\nGrouped Data:")
 print(grouped_df)
+
