@@ -1,10 +1,6 @@
-# Python Programming Fundamentals
-
-This section contains comprehensive Python programming materials covering basic concepts, data structures, and practical exercises.
-
 # Python Programming Fundamentals - First Day
 
-This section contains Python programming materials covering basic concepts and ordered sequences (lists, tuples, strings).
+This section contains Python programming materials covering basic concepts, ordered sequences (lists, tuples, strings), and practical exercises.
 
 ## Topics Covered
 

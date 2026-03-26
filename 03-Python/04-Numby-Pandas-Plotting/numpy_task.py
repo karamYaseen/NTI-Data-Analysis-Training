@@ -1,3 +1,8 @@
+# NumPy in Python - Fourth Day
+# This file covers array creation, vectorized operations, aggregations, indexing, reshape, and timing vs lists
+
+import time
+
 import numpy as np
 
 arr = np.array([1, 2, 3, 4, 5])
@@ -5,12 +10,11 @@ print("Original array:", arr)
 print("Shape:", arr.shape)
 print("Data type:", arr.dtype)
 
-
 print("\nArray + 5:", arr + 5)
 print("Array * 2:", arr * 2)
-arr3 = arr +4
+arr3 = arr + 4
 
-arr2 =np.arange(1, 10).reshape(3, 3)
+arr2 = np.arange(1, 10).reshape(3, 3)
 print("\nArray 2D:\n", arr2)
 
 print("\nsum along rows:", arr2.sum(axis=1))
@@ -27,17 +31,15 @@ print("Last column:", arr2[:, 2])
 print("\nReshaped 1*9:\n", arr2.reshape(1, 9))
 print("\nReshaped 9*1:\n", arr2.reshape(9, 1))
 
-
-import time
 start = time.time()
 list1 = list(range(1000000))
 list2 = [x**2 for x in list1]
 end = time.time()
 print("Time taken:", end - start)
 
-start= time.time()
+start = time.time()
 arr = np.arange(1000000)
-arr2= arr ** 2
+arr2 = arr**2
 end = time.time()
 print("Time taken with NumPy:", end - start)
 

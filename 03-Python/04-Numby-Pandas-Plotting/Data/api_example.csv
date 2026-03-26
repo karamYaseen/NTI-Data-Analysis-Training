@@ -1,0 +1,4 @@
+id,name,email,city,timestamp
+1,Alice,alice@example.com,Cairo,2026-03-14 13:37:31.511961
+2,Bob,bob@example.com,Alexandria,2026-03-14 13:37:31.511961
+3,Carol,carol@example.com,Giza,2026-03-14 13:37:31.511961

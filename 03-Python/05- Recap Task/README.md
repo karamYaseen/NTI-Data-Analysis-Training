@@ -29,17 +29,15 @@ This section brings together SQL from Python, Pandas, web scraping (requests + B
 
 ## Files in This Folder
 
-| File | Purpose |
-|------|---------|
-| `README.md` | This documentation |
-| `recap_advanced_guide.py` | Topic-by-topic reference (same style as `03-Functions-OOP`) |
-| `Advanced.py` | Assignment solution: tasks A–C and bonus |
-| `session7_assignment.ipynb` | Notebook version of the assignment |
-| `sample_text.txt` | Text for regex exercises |
-| `sample.xlsx` | Sample Excel for automation task |
-| `scraped_data.csv` | Created by the scraping step |
-| `cleaned_file.xlsx` | Created by the Excel cleaning step |
-| `combined_report.csv` | Created by the bonus pipeline |
+- `README.md` - This documentation file
+- `recap_advanced_guide.py` - Topic-by-topic reference (same style as earlier day guides)
+- `Advanced.py` - Assignment solution: tasks A–C and bonus
+- `session7_assignment.ipynb` - Notebook version of the assignment
+- `sample_text.txt` - Text for regex exercises
+- `sample.xlsx` - Sample Excel for automation task
+- `.gitignore` - Ignores generated outputs (`scraped_data.csv`, `cleaned_file.xlsx`, `combined_report.csv`)
+
+Generated when you run `Advanced.py` (not always tracked in git): `scraped_data.csv`, `cleaned_file.xlsx`, `combined_report.csv`
 
 ## Learning Objectives
 

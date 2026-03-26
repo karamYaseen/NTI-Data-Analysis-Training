@@ -1,9 +1,16 @@
-import pandas as pd 
+# Pandas in Python - Fourth Day
+# This file covers CSV loading, inspection, filtering, missing data, groupby, merge, and datetime features
 
-df_sales = pd.read_csv('C:\\Users\\yasee\\NTI-Data-Analysis-Training\\03-Python\\04-numby-Pandas\\Data\\sales.csv')
+from pathlib import Path
+
+import pandas as pd
+
+DATA_DIR = Path(__file__).resolve().parent / "Data"
+
+df_sales = pd.read_csv(DATA_DIR / "sales.csv")
 
 print("First 5 rows:")
-print(df_sales.head()) 
+print(df_sales.head())
 
 print("\nBasic info")
 print(df_sales.info())
@@ -11,53 +18,50 @@ print(df_sales.info())
 print("\nStatistics:")
 print(df_sales.describe())
 
-
-Product_price = df_sales[['Product', 'Price']]
+product_price = df_sales[["Product", "Price"]]
 print("\nProduct Price:")
-print(Product_price)
+print(product_price)
 
-high_quantity = df_sales[df_sales['Quantity'] > 10]
-print("\nHigh Quantity Sales:") 
+high_quantity = df_sales[df_sales["Quantity"] > 10]
+print("\nHigh Quantity Sales:")
 print(high_quantity)
 
-sorted_sales = df_sales.sort_values(by='Price', ascending=False)
+sorted_sales = df_sales.sort_values(by="Price", ascending=False)
 print("\nSales sorted by Price (descending):")
 print(sorted_sales)
 
-df_sales['Quantity'] = df_sales['Quantity'].fillna(0)
-df_sales.dropna(subset=['Price'], inplace=True)
+df_sales["Quantity"] = df_sales["Quantity"].fillna(0)
+df_sales.dropna(subset=["Price"], inplace=True)
 print("\nData after handling missing values:")
 print(df_sales)
 
-grouped_sales = df_sales.groupby('Product')['Quantity'].agg(['sum', 'mean'])
+grouped_sales = df_sales.groupby("Product")["Quantity"].agg(["sum", "mean"])
 print("\nGrouped Sales by Product:")
 print(grouped_sales)
 
-df_sales['Total'] = df_sales['Price'] * df_sales['Quantity']
-filtered_sales = df_sales[df_sales['Total'] > 500].sort_values(by='Total', ascending=False)
+df_sales["Total"] = df_sales["Price"] * df_sales["Quantity"]
+filtered_sales = df_sales[df_sales["Total"] > 500].sort_values(by="Total", ascending=False)
 print("\nFiltered and Sorted Sales:")
 print(filtered_sales)
 
-# -*-*-*-*-*--*
-df_Products = pd.read_csv('C:\\Users\\yasee\\NTI-Data-Analysis-Training\\03-Python\\04-numby-Pandas\\Data\\Products.csv')
+df_products = pd.read_csv(DATA_DIR / "products.csv")
 print("\nProducts Data:")
-print(df_Products.head())
+print(df_products.head())
 
-merged_df = pd.merge(df_sales, df_Products, left_on='Product', right_on='Product_Name', how='left')
+merged_df = pd.merge(df_sales, df_products, left_on="Product", right_on="Product_Name", how="left")
 print("\nMerged Data:")
 print(merged_df.head())
 
-merged_df['Category'] = merged_df['Category'].str.upper()
-merged_df['CategoryInitial'] = merged_df['Category'].str[0]
+merged_df["Category"] = merged_df["Category"].str.upper()
+merged_df["CategoryInitial"] = merged_df["Category"].str[0]
 print("\nData after string operations:")
 print(merged_df.head())
 
-merged_df['Sale_Date'] = pd.to_datetime(merged_df['Sale_Date'])
-merged_df['Month'] = merged_df['Sale_Date'].dt.month
+merged_df["Sale_Date"] = pd.to_datetime(merged_df["Sale_Date"])
+merged_df["Month"] = merged_df["Sale_Date"].dt.month
 print("\nData after date conversion and month extraction:")
 print(merged_df.head())
 
-grouped_df = merged_df.groupby(['Category', 'Month'])['Total'].sum()
+grouped_df = merged_df.groupby(["Category", "Month"])["Total"].sum()
 print("\nGrouped Data:")
 print(grouped_df)
-
