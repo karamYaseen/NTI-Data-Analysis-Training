@@ -1,36 +1,53 @@
 # NTI Data Analysis Training
 
-This repository contains all tasks, exercises, and projects from my NTI Data Analysis training.
+Course work, exercises, and projects from **NTI Data Analysis** training — database design, SQL, Python analytics, Power BI, and a capstone e‑commerce analysis.
 
-## Covered Topics
+## Repository layout
 
-### Database Design
-- ER Diagram (ERD)
-- Database Mapping
+| Folder | Content |
+|--------|---------|
+| [`01-Database-Design/`](01-Database-Design/) | ERDs, schema mapping (Musicana, Hospital, Real Estate, Airline, …) |
+| [`02-SQL/`](02-SQL/) | DDL/DML, queries, joins, aggregations, advanced SQL |
+| [`03-Python/`](03-Python/) | Basics, sequences, functions/OOP, NumPy/Pandas/plots, recap tasks |
+| [`04-Power Bi/`](04-Power%20Bi/README.md) | Power Query, modeling, dashboards, PBIX notes |
+| [`Final Project/`](Final%20Project/README.md) | **Capstone:** e‑commerce marketplace analysis (pandas, KPIs, RFM, churn model, charts, executive summary) |
+
+## Topics covered
+
+### Database design
+- Entity–relationship diagrams (ERD)
+- Relational mapping
 
 ### SQL
-- Data Definition Language (DDL)
-- Data Manipulation Language (DML)
-- Queries and Joins
-- Aggregations
-- Subqueries
+- DDL & DML
+- Queries, joins, aggregations, subqueries
 
-### Python for Data Analysis
-- Python Basics
-- NumPy
-- Pandas
-- Data Cleaning
-- Data Analysis
+### Python for data analysis
+- Core Python, NumPy, Pandas
+- Data cleaning and analysis
+- Visualization (matplotlib)
 
 ### Power BI
-- Data Transformation
-- Data Modeling
-- Dashboard Creation
-- Data Visualization
+- Transformation, modeling, dashboards — see [`04-Power Bi/README.md`](04-Power%20Bi/README.md)
+
+### Capstone (Final Project)
+- End‑to‑end workflow: data prep, KPIs, cohorts, RFM, optional ML churn model, exports, `EXECUTIVE_SUMMARY.md`  
+- Quick start: [`Final Project/README.md`](Final%20Project/README.md)
+
+## Clone & run (Final Project)
+
+```bash
+git clone https://github.com/karamYaseen/NTI-Data-Analysis-Training.git
+cd NTI-Data-Analysis-Training/Final Project
+pip install -r requirements.txt
+python task.py
+```
+
+Place `Sales (1).csv` next to `task.py` (see project README). Optional: open `final_project.ipynb` for a step‑by‑step walkthrough.
 
 ## Purpose
 
-This repository documents my learning journey and practical work in data analysis.
+This repository documents practical work and progress through the data analysis curriculum.
 
 ## Author
 
