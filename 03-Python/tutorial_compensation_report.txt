@@ -1,0 +1,24 @@
+
+EMPLOYEE COMPENSATION REPORT
+==================================================
+
+INDIVIDUAL EMPLOYEE DATA:
+   name  department  salary  experience  bonus  total_comp
+  Alice Engineering   75000           3 7500.0     82500.0
+    Bob       Sales   65000           5 6500.0     71500.0
+Charlie Engineering   80000           7 8000.0     88000.0
+  Diana          HR   60000           4 6000.0     66000.0
+    Eve       Sales   70000           6 7000.0     77000.0
+
+DEPARTMENT SUMMARY:
+              salary    bonus  total_comp
+department                               
+Engineering  77500.0  15500.0    170500.0
+HR           60000.0   6000.0     66000.0
+Sales        67500.0  13500.0    148500.0
+
+KEY METRICS:
+- Total employees: 5
+- Average salary: $70,000.00
+- Total bonuses: $35,000.00
+- Total compensation: $385,000.00

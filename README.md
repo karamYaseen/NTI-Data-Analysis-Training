@@ -34,16 +34,18 @@ Course work, exercises, and projects from **NTI Data Analysis** training — dat
 - End‑to‑end workflow: data prep, KPIs, cohorts, RFM, optional ML churn model, exports, `EXECUTIVE_SUMMARY.md`  
 - Quick start: [`Final Project/README.md`](Final%20Project/README.md)
 
-## Clone & run (Final Project)
+## Quick start
 
+### Python track
+1. `pip install -r requirements.txt`
+2. Optional: `python 03-Python/tutorial.py`
+
+### Final Project
 ```bash
-git clone https://github.com/karamYaseen/NTI-Data-Analysis-Training.git
-cd NTI-Data-Analysis-Training/Final Project
+cd "Final Project"
 pip install -r requirements.txt
 python task.py
 ```
-
-Place `Sales (1).csv` next to `task.py` (see project README). Optional: open `final_project.ipynb` for a step‑by‑step walkthrough.
 
 ## Purpose
 

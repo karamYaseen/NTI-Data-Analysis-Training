@@ -2,6 +2,30 @@
 # This file covers classes, inheritance, properties, and magic methods
 
 # ===========================================
+# WHY OOP MATTERS
+# ===========================================
+# OOP organizes code around objects that represent real-world entities.
+# Benefits:
+# - Encapsulation: Hide internal details, expose clean interfaces
+# - Inheritance: Reuse code through class hierarchies
+# - Polymorphism: Same interface, different implementations
+# - Modularity: Objects are self-contained units
+# - Maintainability: Changes are localized to classes
+#
+# Use cases:
+# - GUI applications (buttons, windows as objects)
+# - Game development (players, enemies, items)
+# - Data models (users, products, orders)
+# - API clients (connection objects, request objects)
+#
+# Common pitfalls:
+# - Over-inheritance (deep hierarchies become complex)
+# - Tight coupling (classes too dependent on each other)
+# - God objects (classes that do too many things)
+# - Method resolution order confusion in multiple inheritance
+# - Forgetting to call super().__init__()
+
+# ===========================================
 # BASIC CLASS DEFINITION
 # ===========================================
 

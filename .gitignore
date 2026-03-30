@@ -16,3 +16,18 @@ Thumbs.db
 
 # Notebook checkpoints
 .ipynb_checkpoints/
+
+# Data files (generated outputs)
+*.csv
+*.xlsx
+*.xls
+*.json
+!sample_text.txt  # Keep sample files
+
+# Environment variables
+.env
+.env.local
+
+# Temporary files
+temp/
+tmp/

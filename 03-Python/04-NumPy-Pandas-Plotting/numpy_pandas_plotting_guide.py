@@ -2,6 +2,27 @@
 # This guide covers numerical arrays, DataFrames, and plotting (same structure as earlier day guides)
 
 # ===========================================
+# WHY DATA ANALYSIS LIBRARIES MATTER
+# ===========================================
+# NumPy, Pandas, and Matplotlib form the core of Python data science.
+# Benefits:
+# - NumPy: Fast numerical computations on large datasets
+# - Pandas: Easy data manipulation and analysis (like Excel but programmable)
+# - Matplotlib: Professional-quality visualizations
+#
+# Use cases:
+# - Financial analysis (stock prices, portfolios)
+# - Scientific research (experimental data, simulations)
+# - Business intelligence (sales reports, KPIs)
+# - Machine learning (data preprocessing, feature engineering)
+#
+# Common pitfalls:
+# - Copying large DataFrames (use views when possible)
+# - Memory issues with huge datasets (use chunking)
+# - Matplotlib statefulness (use object-oriented interface)
+# - Pandas SettingWithCopyWarning (understand chained indexing)
+
+# ===========================================
 # SECTION 1: NUMPY FUNDAMENTALS
 # ===========================================
 
