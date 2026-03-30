@@ -69,7 +69,7 @@ You analyze an online marketplace: orders, customers, products, and geography. G
 - [x] Python (`task.py`) + SQL samples under `sql/`  
 - [x] Exported CSVs and figures  
 - [x] Executive summary (`EXECUTIVE_SUMMARY.md`)  
-- [ ] Optional: your own `.pbix` or slides using `data_clean/`  
+- [x] Optional: your own `.pbix` or slides using `data_clean/`  
 
 ---
 
