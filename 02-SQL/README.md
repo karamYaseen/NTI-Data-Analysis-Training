@@ -2,7 +2,7 @@
 
 This section contains comprehensive SQL training materials covering database design, database creation, data manipulation, and advanced querying techniques.
 
-## � Quick Start (5 minutes)
+## Quick Start (5 minutes)
 
 **New to this SQL training?** Do this first:
 1. If you haven't done Database Design (01-Database-Design), start there first
@@ -48,7 +48,7 @@ mysql.server start
 mysql -u root -p
 ```
 
-## �📚 Sections Overview
+## Sections Overview
 
 ### 1. Database Design (ERD & Mapping)
 Foundation for understanding the database structure (see `01-Database-Design` folder):
@@ -208,7 +208,7 @@ The training database typically includes:
 - ✅ Handling NULL values
 - ✅ Joining multiple tables
 
-## � Where to Start: Guide Files
+## Where to Start: Guide Files
 
 **Using the complete guide:**
 - 📚 Read `sql_complete_guide.py` for detailed explanations of concepts
@@ -387,7 +387,7 @@ JOIN departments d ON e.dept_no = d.dept_no;
 - Solution files show working implementations
 
 
-## � Recent Updates
+## Recent Updates
 
 **Documentation Enhanced (March 9, 2026):**
 - Added Quick Start guide (5 minutes)

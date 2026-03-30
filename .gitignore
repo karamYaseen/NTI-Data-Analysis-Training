@@ -5,24 +5,22 @@ __pycache__/
 # Logs
 *.log
 
-# SQL scripts? not necessary but can ignore some
-
 # OS files
 .DS_Store
 Thumbs.db
 
-# VSCode
+# VSCode / Cursor
 .vscode/
+.cursor/
 
 # Notebook checkpoints
 .ipynb_checkpoints/
 
-# Data files (generated outputs)
-*.csv
-*.xlsx
-*.xls
-*.json
-!sample_text.txt  # Keep sample files
+# Tutorial script outputs (regenerated when you run tutorial.py)
+03-Python/tutorial_*.csv
+03-Python/tutorial_*.xlsx
+03-Python/tutorial_*.png
+03-Python/tutorial_quotes_*.csv
 
 # Environment variables
 .env

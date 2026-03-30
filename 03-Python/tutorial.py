@@ -1,7 +1,10 @@
 # Python Data Analysis — Complete Tutorial with Code Examples
+#
+# How to run:  cd 03-Python   then   python tutorial.py
+# (Outputs: PNG/CSV/XLSX in this folder; see ../.gitignore for ignored patterns.)
+#
 # This file contains the entire course curriculum with detailed explanations,
 # code examples, and progressive learning from basics to advanced automation.
-# Run sections individually or as a whole to follow the learning path.
 
 # =============================================================================
 # COURSE OVERVIEW
@@ -2076,7 +2079,6 @@ COURSE COMPLETION SUMMARY
 # End of tutorial
 if __name__ == "__main__":
     print("\nTutorial completed! Check generated files:")
-    print("- tutorial_plots.png")
     print("- tutorial_advanced_plots.png")
     print("- tutorial_scraped_quotes.csv")
     print("- tutorial_products.xlsx")

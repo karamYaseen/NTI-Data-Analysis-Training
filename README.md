@@ -1,56 +1,52 @@
 # NTI Data Analysis Training
 
-Course work, exercises, and projects from **NTI Data Analysis** training — database design, SQL, Python analytics, Power BI, and a capstone e‑commerce analysis.
+Personal coursework for an **NTI Data Analysis** program: relational design, SQL, Python for analytics, Power BI, and a capstone e‑commerce project.
 
-## Repository layout
+---
 
-| Folder | Content |
-|--------|---------|
-| [`01-Database-Design/`](01-Database-Design/) | ERDs, schema mapping (Musicana, Hospital, Real Estate, Airline, …) |
-| [`02-SQL/`](02-SQL/) | DDL/DML, queries, joins, aggregations, advanced SQL |
-| [`03-Python/`](03-Python/) | Basics, sequences, functions/OOP, NumPy/Pandas/plots, recap tasks |
-| [`04-Power Bi/`](04-Power%20Bi/README.md) | Power Query, modeling, dashboards, PBIX notes |
-| [`Final Project/`](Final%20Project/README.md) | **Capstone:** e‑commerce marketplace analysis (pandas, KPIs, RFM, churn model, charts, executive summary) |
+## What’s inside
 
-## Topics covered
+| Path | Focus |
+|------|--------|
+| [`01-Database-Design/`](01-Database-Design/) | ERDs and relational mapping (Musicana, Hospital, Real Estate, Airline, …) |
+| [`02-SQL/`](02-SQL/) | DDL/DML, joins, aggregations, advanced queries |
+| [`03-Python/`](03-Python/) | Core Python → NumPy / Pandas / plots → recap automation |
+| [`04-Power Bi/`](04-Power%20Bi/README.md) | Power Query, modeling, dashboards |
+| [`Final Project/`](Final%20Project/README.md) | **Capstone:** sales data, KPIs, cohorts, RFM, churn model, exports, executive summary |
 
-### Database design
-- Entity–relationship diagrams (ERD)
-- Relational mapping
+---
 
-### SQL
-- DDL & DML
-- Queries, joins, aggregations, subqueries
+## Skills covered
 
-### Python for data analysis
-- Core Python, NumPy, Pandas
-- Data cleaning and analysis
-- Visualization (matplotlib)
+- **Databases:** ERD → tables, keys, normalization mindset  
+- **SQL:** create/load data, filter, join, aggregate, subqueries  
+- **Python:** types, collections, functions, OOP, NumPy/Pandas, matplotlib  
+- **Analytics:** cleaning, KPIs, segmentation, simple ML (Random Forest), reporting  
+- **BI:** dashboards and storytelling with Power BI  
 
-### Power BI
-- Transformation, modeling, dashboards — see [`04-Power Bi/README.md`](04-Power%20Bi/README.md)
-
-### Capstone (Final Project)
-- End‑to‑end workflow: data prep, KPIs, cohorts, RFM, optional ML churn model, exports, `EXECUTIVE_SUMMARY.md`  
-- Quick start: [`Final Project/README.md`](Final%20Project/README.md)
+---
 
 ## Quick start
 
-### Python track
-1. `pip install -r requirements.txt`
-2. Optional: `python 03-Python/tutorial.py`
+| Goal | Steps |
+|------|--------|
+| **Full Python track** | `pip install -r requirements.txt` then optional `python 03-Python/tutorial.py` (run from `03-Python` or use paths as in that folder’s README). |
+| **Capstone only** | Uses [`Final Project/requirements.txt`](Final%20Project/requirements.txt) (pandas, numpy, matplotlib, scikit-learn — lighter than the repo root). |
 
-### Final Project
+**Capstone commands:**
+
 ```bash
 cd "Final Project"
 pip install -r requirements.txt
 python task.py
 ```
 
-## Purpose
+Outputs: `data_clean/`, `outputs/figures/`, `EXECUTIVE_SUMMARY.md`, `sql/`. See [`Final Project/README.md`](Final%20Project/README.md).
 
-This repository documents practical work and progress through the data analysis curriculum.
+---
 
-## Author
+## About this repo
 
-Karam Yaseen
+It’s a **learning journal**: exercises, notes, and runnable projects in one place. Fork or clone for structure; content reflects the curriculum as completed.
+
+**Author:** Karam Yaseen

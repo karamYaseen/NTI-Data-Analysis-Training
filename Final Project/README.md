@@ -1,97 +1,76 @@
 # E-Commerce Marketplace Analysis — Final Project
 
-## Simplest way
+Technical assessment: **prepare data**, compute **KPIs**, **visualize**, and write **recommendations** from a marketplace-style sales extract.
 
-1. Put `Sales (1).csv` next to `task.py`, install `pip install -r requirements.txt`.
-2. **One command:** `python task.py` → creates `data_clean/`, `outputs/figures/`, `EXECUTIVE_SUMMARY.md`.
-3. **Or** open `final_project.ipynb`, run all cells (start Jupyter **from the `Final Project` folder** so imports work).
+---
+
+## Quick start
+
+1. Add **`Sales (1).csv`** in this folder next to **`task.py`**.
+2. Install dependencies:  
+   `pip install -r requirements.txt`
+3. Run:  
+   `python task.py`
+
+**Optional:** open **`final_project.ipynb`** and run cells top to bottom (start Jupyter with this folder as the working directory so `import task` works).
+
+One run produces:
+
+- **`data_clean/`** — cleaned fact table + KPI/segment CSVs for Excel or Power BI  
+- **`outputs/figures/`** — PNG charts  
+- **`EXECUTIVE_SUMMARY.md`** — auto summary with key numbers and Part D recommendations  
+- **`sql/`** — sample SQL aligned with the analysis  
+
+---
 
 ## Scenario
 
-Your company operates an online marketplace. You have a sales dataset with customer transactions, product details, and orders. The goal is to analyze metrics, spot issues, and recommend actions.
+You analyze an online marketplace: orders, customers, products, and geography. Goals: measure performance, find weak spots, and suggest actions.
+
+---
 
 ## Dataset (`Sales (1).csv`)
 
-| Column | Description |
-|--------|-------------|
-| Row ID | Row identifier |
-| Order ID | Unique order |
-| Order Date / Ship Date | Order and ship dates |
-| Ship Mode | e.g. Standard Class, Second Class |
-| Customer ID / Customer Name | Customer |
-| Segment | Consumer, Corporate, Home Office |
-| Country/Region, City, **State**, Postal Code, Region | Geography |
-| Product ID, Category, Sub-Category, Product Name | Product |
-| Sales, Quantity, Discount, Profit | Measures |
+| Area | Columns |
+|------|---------|
+| Order | Row ID, Order ID, Order Date, Ship Date, Ship Mode |
+| Customer | Customer ID, Name, Segment |
+| Geography | Country/Region, City, State, Postal Code, Region |
+| Product | Product ID, Category, Sub-Category, Product Name |
+| Measures | Sales, Quantity, Discount, Profit |
+
+---
 
 ## Assessment mapping
 
-| Part | What is covered |
-|------|------------------|
-| **A — Data prep** | Cleaning, duplicates, invalid region, missing postal reported, `data_quality_report.json`, active/repeat/new flags |
-| **B — KPIs** | Monthly KPIs, AOV, LTV, churned customer counts, retention/churn, RFM + KMeans, churn Random Forest + report |
-| **C — Visualization** | PNG charts in `outputs/figures/`, plus CSVs for Power BI / Tableau |
-| **D — Recommendations** | `EXECUTIVE_SUMMARY.md` (auto-generated with numbers) |
+| Part | Delivered in this project |
+|------|---------------------------|
+| **A — Data prep** | Cleaning, duplicates, invalid regions, missing postal reported, quality JSON, customer flags |
+| **B — KPIs** | Monthly metrics, AOV, LTV, retention/churn, RFM + clustering, churn model + report |
+| **C — Visualization** | PNGs in `outputs/figures/`, dashboard-ready CSVs |
+| **D — Recommendations** | `EXECUTIVE_SUMMARY.md` |
 
-## How to run
+---
 
-1. Place `Sales (1).csv` next to `task.py`.
-2. Install dependencies:
+## Outputs (reference)
 
-```bash
-pip install -r requirements.txt
-```
+**Reports:** `EXECUTIVE_SUMMARY.md` · `sql/sample_queries.sql` · `sql/orders_project_analysis.sql` (SSMS / SQL Server — **back up DB first**; script may alter data).
 
-3. Run the analysis:
+**`data_clean/`** (main files for BI):
 
-```bash
-python task.py
-```
+`sales_cleaned.csv` · `kpi_monthly.csv` · `cohort_retention.csv` · `weekly_sales.csv` · `category_performance.csv` · `subcategory_performance.csv` · `region_performance.csv` · `segment_performance.csv` · `top_products.csv` · `rfm_segments.csv` · `discount_impact.csv` · `churn_feature_importance.csv` · `churn_model_classification_report.txt` · `data_quality_report.json`
 
-This writes **cleaned data**, **KPI tables**, **figures**, **`EXECUTIVE_SUMMARY.md`**, and SQL helpers under **`sql/`**.
+**`outputs/figures/`:** Monthly sales/profit, ship mode, cohort heatmap, region, sub-categories, segment, retention vs churn, margin by category.
 
-## Outputs
-
-### Reports
-
-| File | Purpose |
-|------|---------|
-| `EXECUTIVE_SUMMARY.md` | Snapshot + findings + Part D recommendations (re-run `task.py` to refresh numbers) |
-| `sql/sample_queries.sql` | Short generic examples (PostgreSQL-style `DATE_TRUNC` notes) |
-| `sql/orders_project_analysis.sql` | **Your SSMS work:** `OrdersProject` — missing checks, dates, dedupe, active/new/churn, Part B KPIs, RFM base |
-
-Run **`orders_project_analysis.sql`** on your database (backup first; contains `ALTER` / `UPDATE` / `DELETE` / `SELECT INTO`).
-
-### `data_clean/` (for dashboards)
-
-| File | Purpose |
-|------|---------|
-| `sales_cleaned.csv` | Main fact table |
-| `kpi_monthly.csv` | Monthly AOV, active, new, retention, churn rate, **churned_customers** |
-| `cohort_retention.csv` | Cohort retention matrix |
-| `weekly_sales.csv` | Weekly sales totals |
-| `category_performance.csv` | Sales, profit, margin by category |
-| `subcategory_performance.csv` | By category + sub-category |
-| `region_performance.csv` | Region sales & profit |
-| `segment_performance.csv` | Segment sales & profit |
-| `top_products.csv` | Top products |
-| `rfm_segments.csv` | RFM + cluster |
-| `discount_impact.csv` | Avg sales/profit by discount band |
-| `churn_feature_importance.csv` | Model feature weights |
-| `churn_model_classification_report.txt` | Precision/recall/F1 |
-| `data_quality_report.json` | Row counts, duplicate removal, missing postal count |
-
-### `outputs/figures/`
-
-Charts: monthly sales/profit, ship mode, cohort heatmap, region, top sub-categories, segment, retention vs churn trend, margin by category.
+---
 
 ## Deliverables checklist
 
-- [x] Python script (`task.py`) — SQL-style samples in `sql/`
-- [x] CSVs + PNGs for dashboards / KPIs
-- [x] Executive summary & recommendations (`EXECUTIVE_SUMMARY.md`)
-- [ ] Optional: your own `.pbix` or slide deck using `data_clean/`
+- [x] Python (`task.py`) + SQL samples under `sql/`  
+- [x] Exported CSVs and figures  
+- [x] Executive summary (`EXECUTIVE_SUMMARY.md`)  
+- [ ] Optional: your own `.pbix` or slides using `data_clean/`  
 
-## Author
+---
 
-Karam Yaseen
+**Author:** Karam Yaseen

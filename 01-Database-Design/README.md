@@ -17,8 +17,8 @@ This section contains comprehensive database design materials covering Entity-Re
 ## Project Structure
 
 - `database_design_concepts.py` – detailed concepts
-- `ERD/` – four problem folders with diagrams
-- `Mapping/` – corresponding relational schemas
+- `01-ERD/` – four problem folders with diagrams
+- `02-Mapping/` – corresponding relational schemas
 
 Each problem folder includes a README and image.
 
