@@ -16,13 +16,13 @@ Hands-on Power BI Desktop work: Kickstarter analytics, e‑commerce modeling, Ad
 ### 2. Data modeling — E‑commerce sales (`02- Modeling/`)
 
 - Relationships, facts/dimensions, DAX measures
-- Sales-focused dashboard (PBIX and sources when you add them locally)
+- Sales-focused dashboard (typically `E-Commerce Sales.pbix` and `Sales.xlsx` alongside this module)
 
 ### 3. Lab 3 — AdventureWorks DirectQuery (`03- Direct Query/`)
 
 - SQL Server **AdventureWorks OLTP**, **DirectQuery**, star schema, DAX
 - Role-playing dates (Order / Ship / Due) with **`USERELATIONSHIP`**
-- See [`03- Direct Query/README.md`](03-%20Direct%20Query/README.md) — `Lab 3.txt`, instructor brief
+- See [`03- Direct Query/README.md`](03-%20Direct%20Query/README.md) — `Lab 3.txt`, AdventureWorks **DirectQuery**, SSMS checks
 
 > **Scope:** Lab 3 only. Not the capstone **Final Project** in `Final Project/` at repo root.
 
@@ -38,10 +38,10 @@ Hands-on Power BI Desktop work: Kickstarter analytics, e‑commerce modeling, Ad
 
 | Folder | Focus | Key files (in repo or local) |
 |--------|--------|------------------------------|
-| `01-Basic-Dashboard/` | Kickstarter analytics | `Kickstarter-Projects-Data/*.csv`; add `.pbix` + screenshot locally |
-| `02- Modeling/` | E‑commerce sales model | Add `E-Commerce Sales.pbix`, `Sales.xlsx`, screenshot as needed |
-| `03- Direct Query/` | Lab 3 AdventureWorks | `Lab 3.txt`, `README.md` |
-| `04- Full Project/` | Telecom churn ETL + BI | `Customer_Data.csv`, `SQLQuery1.sql`, `README.md`; add `.pbix` locally |
+| `01-Basic-Dashboard/` | Kickstarter analytics | `Kickstarter-Projects-Data/*.csv`; dashboard `.pbix` / screenshot may be local |
+| `02- Modeling/` | E‑commerce sales model | `README.md`; `.pbix` / `Sales.xlsx` often kept locally |
+| `03- Direct Query/` | Lab 3 AdventureWorks | `Lab 3.txt`, `README.md`; restore AdventureWorks in SSMS (see that README) |
+| `04- Full Project/` | Telecom churn ETL + BI | `Customer_Data.csv`, `SQLQuery1.sql`, `README.md`; churn `.pbix` may be local |
 
 ---
 

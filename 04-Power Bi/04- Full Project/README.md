@@ -21,7 +21,7 @@ Although the scenario is **telecom**, the same ideas apply to retail, finance, h
   | `#F2F2F2` | Neutral background |
   | `#A0D1FF` | Highlight / chart fill |
 
-- **Repo files:** `Customer_Data.csv` (source data), `SQLQuery1.sql` (exploration and ETL-style queries aligned with the lab). Add your **`churn` / full project `.pbix`** locally if you do not commit binary files.
+- **Repo files:** `Customer_Data.csv` (source data), `SQLQuery1.sql` (exploration and ETL-style queries aligned with the lab). The Power BI **`.pbix`** may live only on your machine if you prefer not to commit binaries.
 
 ## Project target
 
@@ -48,7 +48,7 @@ Although the scenario is **telecom**, the same ideas apply to retail, finance, h
 1. Install **SQL Server** and **SSMS**. Connect (note server name; use **Trust server certificate** if prompted).
 2. Create database, e.g. `CREATE DATABASE db_Churn;`
 3. **Import CSV** into a **staging** table (e.g. `stg_Churn`): Tasks → Import Flat File; set **`Customer_ID`** as primary key; allow nulls on other columns as needed; map **BIT** to **Varchar(50)** if the import wizard misbehaves.
-4. **Explore:** distincts on `Gender`, `Contract`, `Customer_Status`, `State`; null counts per column.
+4. **Explore:** distinct values for `Gender`, `Contract`, `Customer_Status`, `State`; null counts per column.
 5. **Clean:** e.g. `ISNULL` / defaults for missing categories; load into **`prod_Churn`** (production table).
 6. **Views for Power BI** (as in the video):
    - `vw_ChurnData` — rows where `Customer_Status` in `('Churned','Stayed')`
@@ -103,7 +103,7 @@ On the main fact table (e.g. `prod_Churn`):
 
 ## Related work elsewhere in the repo
 
-- **Lab 3 (AdventureWorks):** [`../03- Direct Query/`](../03-%20Direct%20Query/)
+- **Lab 3 (AdventureWorks):** [`../03- Direct Query/README.md`](../03-%20Direct%20Query/README.md)
 - **Capstone “Final Project”** (if present): see `Final Project/` at repository root — separate from this Power BI churn folder.
 
 Parent index: [`../README.md`](../README.md).

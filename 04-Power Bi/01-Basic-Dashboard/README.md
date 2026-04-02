@@ -9,14 +9,14 @@ Practice building a one-page **Kickstarter** analytics story: load projects data
 | `Kickstarter-Projects-Data/ks-projects-201612.csv` | Projects snapshot (2016-12) |
 | `Kickstarter-Projects-Data/ks-projects-201801.csv` | Projects snapshot (2018-01) |
 
-## Local files (add when you build the lab)
+## Report files
 
 | File | Use |
 |------|-----|
 | `Kickstarter Analytics Dashboard.pbix` | Power BI report — open with Power BI Desktop |
 | `Kickstarter Analytics Dashboard.png` | Optional screenshot for docs or portfolio |
 
-If your PBIX used a different folder name for CSVs, update **Data source settings** after cloning so paths match `Kickstarter-Projects-Data/`.
+If the PBIX points at a different folder for the CSVs, use **Transform data → Data source settings** after cloning so paths match `Kickstarter-Projects-Data/`.
 
 ## What you practice
 

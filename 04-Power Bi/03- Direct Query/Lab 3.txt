@@ -2,7 +2,7 @@
 - Data Source: 
 https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver15&tabs=ssms
 
-Conductivity Mode => DirectQuery
+Connectivity Mode => DirectQuery
 
 Tables:
 Sales.SalesOrderHeader
@@ -25,11 +25,11 @@ Production.Product
 Production.ProductSubcategory
 Production.ProductCategory
 
-Contains: PorductID, Product, SubCategory, Category
+Contains: ProductID, Product, SubCategory, Category
 
-Solve TotalDue, Tax and Fright by Power Query or DAX 
+Solve TotalDue, Tax and Freight by Power Query or DAX 
 
-Modelig:
+Modeling:
 
 - Star Schema 
 - Product Hierarchy
@@ -70,7 +70,7 @@ Visuals: (Use Measures)
 # Order Qty by Category, SubCategory, Product
 # Orders by FlagOnlineOffline
 # Orders vs. TotalDue by Territory
-Top 10 Sales Perosns (# Orders or Total Amount) (Filter filter pane)
+Top 10 Sales Persons (# Orders or Total Amount) (Filter filter pane)
 
 
 -- Good Colors, Layout and Chart Titles (Meaningful)

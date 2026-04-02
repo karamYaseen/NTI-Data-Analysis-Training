@@ -2,9 +2,9 @@
 
 Practice a **sales-oriented** Power BI model: relate fact and dimension tables, write DAX measures, and build a dashboard for e‑commerce-style questions (revenue, orders, trends).
 
-## Local files (typical lab layout)
+## Typical lab files
 
-Add these next to this README when you work the module:
+These often sit next to this README when you build the module:
 
 | File | Use |
 |------|-----|
