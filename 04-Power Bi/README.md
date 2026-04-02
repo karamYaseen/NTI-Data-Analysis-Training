@@ -1,84 +1,69 @@
 # Power BI — Data Visualization & Modeling
 
-This section contains Power BI Desktop projects: a starter dashboard built on Kickstarter crowdfunding data, and a modeled sales report for e‑commerce-style analytics.
+Hands-on Power BI Desktop work: Kickstarter analytics, e‑commerce modeling, AdventureWorks DirectQuery (Lab 3), and a telecom **churn analysis** full project aligned with the course video.
 
-## Topics Covered
-
-### 1. Basic Dashboard (Kickstarter)
-- Connecting to CSV data and shaping it for reporting
-- Building visuals: KPIs, trends, categories, and filters
-- Publishing-style layout: one page “Kickstarter Analytics” story
-
-### 2. Data Modeling (E‑Commerce Sales)
-- Relating sales tables and measures (star/snowflake-style thinking in Power BI)
-- DAX-friendly model: facts, dimensions, and business metrics
-- Dashboard focused on sales performance (E‑Commerce Sales report)
-
-## Projects in This Folder
-
-### 01 — Basic Dashboard (`01-Basic-Dashboard/`)
-
-| Item | Description |
-|------|-------------|
-| `Kickstarter Analytics Dashboard.pbix` | Main Power BI report file — open with **Power BI Desktop** |
-| `Kickstarter Analytics Dashboard.png` | **Screenshot** of the dashboard (export from Power BI or place your own image here) |
-| `Kickstarter-Projects-Data/` | Source CSVs: `ks-projects-201612.csv`, `ks-projects-201801.csv` |
-
-**What you practiced:** loading real-world Kickstarter project data, cleaning/filtering in Power Query, and building a readable analytics dashboard.
-
-**Dashboard preview**
-
-![Kickstarter Analytics Dashboard](01-Basic-Dashboard/Kickstarter%20Analytics%20Dashboard.png)
+**Folder names** use spaces after the number (e.g. `02- Modeling`, `03- Direct Query`). In links, use `%20` for spaces where needed.
 
 ---
 
-### 02 — Modeling (`02- Modeling/`)
+## Topics covered
 
-> **Rename tip:** Close Power BI if this folder is locked, then rename `02- Modeling` → `02-Modeling` for consistency with `01-Basic-Dashboard`.
+### 1. Basic Dashboard — Kickstarter (`01-Basic-Dashboard/`)
 
-| Item | Description |
-|------|-------------|
-| `E-Commerce Sales.pbix` | Main Power BI report — sales / e‑commerce modeling |
-| `E-Commerce Sales.png` | **Screenshot** of the dashboard |
-| `Sales.xlsx` | Excel source used in the model (as configured in the PBIX) |
+- CSV import and shaping for reporting
+- KPIs, trends, categories, filters, one-page story
 
-**What you practiced:** data model relationships, measures, and a sales-focused dashboard.
+### 2. Data modeling — E‑commerce sales (`02- Modeling/`)
 
-**Dashboard preview**
+- Relationships, facts/dimensions, DAX measures
+- Sales-focused dashboard (PBIX and sources when you add them locally)
 
-![E-Commerce Sales](02-%20Modeling/E-Commerce%20Sales.png)
+### 3. Lab 3 — AdventureWorks DirectQuery (`03- Direct Query/`)
+
+- SQL Server **AdventureWorks OLTP**, **DirectQuery**, star schema, DAX
+- Role-playing dates (Order / Ship / Due) with **`USERELATIONSHIP`**
+- See [`03- Direct Query/README.md`](03-%20Direct%20Query/README.md) — `Lab 3.txt`, instructor brief
+
+> **Scope:** Lab 3 only. Not the capstone **Final Project** in `Final Project/` at repo root.
+
+### 4. Full project — Churn analysis (`04- Full Project/`)
+
+- ETL in **SQL Server** (`db_Churn`, staging → production, views) + **Power BI** churn dashboard
+- Spec, colors, measures, and visuals follow: [Introduction to Churn Analysis](https://www.youtube.com/watch?v=QFDslca5AX8)
+- See [`04- Full Project/README.md`](04-%20Full%20Project/README.md)
 
 ---
 
-## Adding or Updating Screenshots
+## Projects in this folder
 
-1. In Power BI Desktop: **File → Export → Export to PDF** or use **Snipping Tool** / **Win+Shift+S** for a PNG.
-2. Save next to the matching `.pbix` with a clear name, e.g. `Kickstarter Analytics Dashboard.png`.
-3. If you rename image files, update the `![alt](path)` lines above so the path matches (use `%20` for spaces in GitHub Markdown).
+| Folder | Focus | Key files (in repo or local) |
+|--------|--------|------------------------------|
+| `01-Basic-Dashboard/` | Kickstarter analytics | `Kickstarter-Projects-Data/*.csv`; add `.pbix` + screenshot locally |
+| `02- Modeling/` | E‑commerce sales model | Add `E-Commerce Sales.pbix`, `Sales.xlsx`, screenshot as needed |
+| `03- Direct Query/` | Lab 3 AdventureWorks | `Lab 3.txt`, `README.md` |
+| `04- Full Project/` | Telecom churn ETL + BI | `Customer_Data.csv`, `SQLQuery1.sql`, `README.md`; add `.pbix` locally |
+
+---
 
 ## Requirements
 
 - [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (Windows)
-- For refresh: same relative paths as in the PBIX, or **Transform data → Data source settings** after moving files
+- For Lab 3: SQL Server + [SSMS](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16), restore AdventureWorks
+- For churn project: SQL Server + SSMS per [`04- Full Project/README.md`](04-%20Full%20Project/README.md)
 
-### Note (data folder name)
+### Data path note (Kickstarter)
 
-The Kickstarter CSV folder was renamed to `Kickstarter-Projects-Data` (was `Ks_Projects Data`). If **Refresh** fails, open the PBIX → **Transform data** → **Data source settings** → point to `01-Basic-Dashboard/Kickstarter-Projects-Data/` and the correct CSV files.
+The CSV folder is `01-Basic-Dashboard/Kickstarter-Projects-Data/`. If refresh fails, use **Transform data → Data source settings** and point to that folder.
 
-## Files in This Folder (overview)
+---
 
-- `README.md` — This documentation
-- `01-Basic-Dashboard/` — Kickstarter analytics PBIX, PNG, and `Kickstarter-Projects-Data/` CSVs
-- `02- Modeling/` — E‑Commerce Sales PBIX, PNG, and `Sales.xlsx`
+## Learning objectives
 
-## Learning Objectives
-
-After working through these projects, you should be able to:
-
-- Import and transform CSV/Excel data in Power Query
+- Import and transform CSV/Excel in Power Query
 - Build interactive dashboards with filters and visuals
-- Structure a simple data model and connect it to business questions
-- Export and document work using PBIX files and dashboard screenshots
+- Model relationships and measures for business questions
+- Use DirectQuery against SQL Server where appropriate
+- Run an end-to-end churn pipeline: database ETL + Power BI
 
 ## Author
 

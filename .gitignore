@@ -29,3 +29,6 @@ Thumbs.db
 # Temporary files
 temp/
 tmp/
+
+# SQL Server backups (often >100MB; restore locally, do not commit)
+*.bak

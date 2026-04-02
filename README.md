@@ -11,7 +11,7 @@ Personal coursework for an **NTI Data Analysis** program: relational design, SQL
 | [`01-Database-Design/`](01-Database-Design/) | ERDs and relational mapping (Musicana, Hospital, Real Estate, Airline, …) |
 | [`02-SQL/`](02-SQL/) | DDL/DML, joins, aggregations, advanced queries |
 | [`03-Python/`](03-Python/) | Core Python → NumPy / Pandas / plots → recap automation |
-| [`04-Power Bi/`](04-Power%20Bi/README.md) | Power Query, modeling, dashboards |
+| [`04-Power Bi/`](04-Power%20Bi/README.md) | Power Query, modeling, dashboards; **Lab 3** → [`04-Power Bi/03- Direct Query/`](04-Power%20Bi/03-%20Direct%20Query/README.md) |
 | [`Final Project/`](Final%20Project/README.md) | **Capstone:** sales data, KPIs, cohorts, RFM, churn model, exports, executive summary |
 
 ---
