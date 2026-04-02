@@ -32,3 +32,6 @@ tmp/
 
 # SQL Server backups (often >100MB; restore locally, do not commit)
 *.bak
+
+# Lab brief consolidated into 03- Direct Query/README.md
+**/Lab 3.txt
