@@ -11,8 +11,8 @@ Hands-on modules: Kickstarter dashboard, e‑commerce modeling, **Lab 3** (Adven
 
 **Naming:** folders use a space after the number (`02- Modeling`, `03- Direct Query`). In URLs use `%20` for spaces.
 
-**Scope:** Lab 3 lives only under **`03- Direct Query/`**. The repo **`Final Project/`** capstone is separate.
+**Scope:** Lab 3 is only **`03- Direct Query/`**. The repo **`Final Project/`** capstone is separate.
 
-**Tools:** [Power BI Desktop](https://powerbi.microsoft.com/desktop/), SQL Server + [SSMS](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16) where a module needs it.
+**Tools:** [Power BI Desktop](https://powerbi.microsoft.com/desktop/); SQL Server + [SSMS](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16) for Lab 3 and the churn module.
 
 **Author:** Karam Yaseen

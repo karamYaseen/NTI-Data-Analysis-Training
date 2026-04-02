@@ -2,7 +2,7 @@
 
 **Database:** AdventureWorks **OLTP** in SQL Server — restore from [AdventureWorks sample databases](https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms) (large `.bak` files stay local; not in this repo).
 
-**Tools:** [SSMS](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16) to verify numbers against your report.
+**Tools:** [Power BI Desktop](https://powerbi.microsoft.com/desktop/) · [SSMS](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16) (check numbers vs the report)
 
 **Typical files:** your lab `.pbix` (any name you use in class).
 

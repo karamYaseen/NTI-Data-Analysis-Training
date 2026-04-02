@@ -1,10 +1,16 @@
 # 04 — Full project: Telecom churn (ETL + Power BI)
 
-Walkthrough: **[Introduction to Churn Analysis](https://www.youtube.com/watch?v=QFDslca5AX8)** (YouTube).
+**Walkthrough:** **[Introduction to Churn Analysis](https://www.youtube.com/watch?v=QFDslca5AX8)** (YouTube)
 
 **Theme colors:** `#4A44F2`, `#9B9FF2`, `#F2F2F2`, `#A0D1FF`
 
-**Repo files:** `Customer_Data.csv`, `SQLQuery1.sql` — plus your **churn `.pbix`** (local name is your choice).
+**Tools:** [Power BI Desktop](https://powerbi.microsoft.com/desktop/) · SQL Server + [SSMS](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
+
+**Repo files:** `Customer_Data.csv`, `SQLQuery1.sql`
+
+**Typical files:** your churn `.pbix` (local name is your choice).
+
+**Scope:** Churn module in this folder — **not** Lab 3 (`03- Direct Query/`). Capstone: repo **`Final Project/`**.
 
 ## Tasks — SQL Server (ETL)
 
@@ -44,6 +50,6 @@ Walkthrough: **[Introduction to Churn Analysis](https://www.youtube.com/watch?v=
 
 - [ ] Page or tooltip: churn reason vs total churn.
 
-**Related:** Lab 3 is [`../03- Direct Query/README.md`](../03-%20Direct%20Query/README.md). Capstone: repo **`Final Project/`**.
+**Related:** [`../03- Direct Query/README.md`](../03-%20Direct%20Query/README.md) (Lab 3).
 
 Parent: [`../README.md`](../README.md)
