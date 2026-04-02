@@ -1,28 +1,43 @@
-# 01 — Basic dashboard (Kickstarter)
+# Basic Dashboard Module — Kickstarter Projects
 
-**Data:** `Kickstarter-Projects-Data/ks-projects-201612.csv`, `ks-projects-201801.csv`
+Technical assessment: **Connect to CSV data**, **shape in Power Query**, create **KPI cards and visuals**, ensure **explorable layout**.
 
-**Tools:** [Power BI Desktop](https://powerbi.microsoft.com/desktop/)
+---
 
-**Typical files:** `Kickstarter Analytics Dashboard.pbix`, optional PNG export.
+## Quick start
 
-## Tasks — Data & connection
+1. Open Power BI Desktop
+2. Connect to CSVs in `Kickstarter-Projects-Data/`
+3. Shape data, build report, export PNG
 
-- [ ] Connect to the CSVs (one folder path; fix **Data source settings** after clone if paths break).
+**Typical output:** `Kickstarter Analytics Dashboard.pbix`, optional PNG export.
 
-## Tasks — Power Query
+---
 
-- [ ] Shape data (types, filters, columns you need for the story).
+## Scenario
 
-## Tasks — Report
+Analyze Kickstarter crowdfunding data: project success rates, funding trends by category and time.
 
-- [ ] KPI cards (e.g. projects count, success rate, funding).
-- [ ] Time trend and category / state visuals per your brief.
-- [ ] Slicers or filters so the page is explorable.
-- [ ] One clear layout: title, meaningful chart titles, consistent colors.
+---
 
-## Tasks — QA & export
+## Dataset
 
-- [ ] Export or snapshot the dashboard if you need a PNG for your portfolio.
+| File | Description |
+|------|-------------|
+| `ks-projects-201612.csv` | Kickstarter projects data (2016) |
+| `ks-projects-201801.csv` | Kickstarter projects data (2018) |
+
+**Key columns:** ID, name, category, main_category, currency, deadline, goal, launched, pledged, state, backers, country, usd_pledged_real, usd_goal_real
+
+---
+
+## Tasks
+
+| Phase | Deliverables |
+|-------|--------------|
+| **Data & connection** | Connect to CSVs; fix paths if needed |
+| **Power Query** | Clean types, filters, select columns |
+| **Report** | KPI cards, time trends, category visuals, slicers |
+| **QA & export** | Export dashboard PNG |
 
 Parent: [`../README.md`](../README.md)

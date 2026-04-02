@@ -1,52 +1,49 @@
-# 03 — Lab 3 (AdventureWorks DirectQuery)
+# DirectQuery Module — Lab 3 (AdventureWorks)
 
-**Database:** AdventureWorks **OLTP** in SQL Server — restore from [AdventureWorks sample databases](https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms) (large `.bak` files stay local; not in this repo).
+Technical assessment: **Connect DirectQuery** to SQL Server, **shape data**, build **star schema**, create **DAX measures**, design **drill-down report**.
 
-**Tools:** [Power BI Desktop](https://powerbi.microsoft.com/desktop/) · [SSMS](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16) (check numbers vs the report)
+---
 
-**Typical files:** your lab `.pbix` (any name you use in class).
+## Quick start
 
-**Scope:** Lab 3 only — **not** the repo root **`Final Project/`** capstone.
+1. Install SQL Server + SSMS; restore AdventureWorks
+2. Open Power BI Desktop
+3. DirectQuery connection to database
+4. Shape, model, build report
 
-## Tasks — Environment
+**Typical output:** Lab 3 `.pbix` file.
 
-- [ ] SQL Server + SSMS installed; AdventureWorks restored and reachable.
+---
 
-## Tasks — Power BI connection
+## Scenario
 
-- [ ] New report → **DirectQuery** into AdventureWorks OLTP (this lab expects DirectQuery, not a pure Import workflow).
+Analyze AdventureWorks sales data using DirectQuery: orders, products, territories, with role-playing dates.
 
-## Tasks — Tables (minimum)
+---
 
-- [ ] `Sales.SalesOrderHeader`, `Sales.SalesOrderDetail`, `Sales.vSalesPerson`, `Sales.SalesTerritory`, `Purchasing.ShipMethod`, `Production.Product`, `Production.ProductSubcategory`, `Production.ProductCategory`
+## Dataset
 
-## Tasks — Power Query
+**Database:** AdventureWorks OLTP (SQL Server)
 
-- [ ] Rename tables/columns; drop unused columns.
-- [ ] **Status** aligned with `ufnGetSalesOrderStatusText` (or equivalent).
-- [ ] **Dates** table or logic as your model needs.
-- [ ] Merge **Product** + **Subcategory** + **Category** → one table: **ProductID**, **Product**, **SubCategory**, **Category**.
-- [ ] **TotalDue**, **Tax**, **Freight** — Power Query or DAX per brief.
+**Key tables:** `Sales.SalesOrderHeader`, `Sales.SalesOrderDetail`, `Sales.vSalesPerson`, `Sales.SalesTerritory`, `Purchasing.ShipMethod`, `Production.Product`, `Production.ProductSubcategory`, `Production.ProductCategory`
 
-## Tasks — Model
+**DAX / facts:** order counts; SubTotal, Tax, Freight, TotalDue, quantity (per lab).
 
-- [ ] Star schema + **product hierarchy**.
-- [ ] One **active** date relationship from the fact to your calendar table; **OrderDate** / **ShipDate** / **DueDate** handled with **`USERELATIONSHIP`** for inactive roles ([Radacad](https://radacad.com/userelationship-or-role-playing-dimension-dealing-with-inactive-relationships-in-power-bi)).
+**Resources:** [AdventureWorks (install)](https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms) · [SSMS](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16) · [USERELATIONSHIP / role-playing dates](https://radacad.com/userelationship-or-role-playing-dimension-dealing-with-inactive-relationships-in-power-bi)
 
-## Tasks — DAX
+---
 
-- [ ] Measures: # Orders, Total SubTotal, Total Tax, Total Freight, Total Due, # Qty — in a **measures table**.
+## Tasks
 
-## Tasks — Report
-
-- [ ] Drill down, drillthrough, **tooltip** page.
-- [ ] Cards: # Orders, Total SubTotal, Total Tax, Total Freight, Total Due.
-- [ ] # Orders by **OrderDate** vs **ShipDate** vs **DueDate** (role-playing pattern).
-- [ ] # Orders by Status; by ShipMethod; Qty by Category → SubCategory → Product; online/offline if present; Orders vs TotalDue by Territory; top 10 salespeople (filters as needed).
-
-## Tasks — QA
-
-- [ ] Card measures match **SSMS** on the same tables/columns.
-- [ ] Clean layout, colors, **meaningful chart titles**.
+| Phase | Deliverables |
+|-------|--------------|
+| **Environment** | SQL Server + SSMS installed; AdventureWorks restored |
+| **Connection** | DirectQuery to AdventureWorks OLTP |
+| **Tables** | Load minimum required tables |
+| **Power Query** | Rename, merge, status/dates logic |
+| **Model** | Star schema + product hierarchy; USERELATIONSHIP for dates |
+| **DAX** | Measures table: orders, totals, quantities |
+| **Report** | Drill-down, tooltips, cards, trends by dates/status |
+| **QA** | Match SSMS numbers; clean layout |
 
 Parent: [`../README.md`](../README.md)

@@ -1,24 +1,42 @@
-# 02 — Data modeling (E‑commerce sales)
+# Data Modeling Module — E-Commerce Sales
 
-**Data:** `Sales.xlsx` (typical lab source)
+Technical assessment: **Load Excel data**, build **star schema model**, create **DAX measures**, design **sales dashboard**.
 
-**Tools:** [Power BI Desktop](https://powerbi.microsoft.com/desktop/)
+---
 
-**Typical files:** `E-Commerce Sales.pbix`, `Sales.xlsx`, optional screenshot PNG.
+## Quick start
 
-## Tasks — Load & connection
+1. Open Power BI Desktop
+2. Load `Sales.xlsx`
+3. Model data, add measures, build dashboard
 
-- [ ] Load `Sales.xlsx` (or your lab source); confirm refresh paths match this folder after clone.
+**Typical output:** `E-Commerce Sales.pbix`, optional screenshot PNG.
 
-## Tasks — Model
+---
 
-- [ ] **Star-style** model: facts vs dimensions; hide unused columns.
-- [ ] Relationships and filter direction for your visuals.
+## Scenario
 
-## Tasks — DAX & report
+Model e-commerce sales data in a star schema: facts and dimensions, relationships, DAX KPIs.
 
-- [ ] **DAX measures** for revenue, orders, and other KPIs the lab asks for.
-- [ ] Sales dashboard: cards, trends, breakdowns — measures on visuals.
-- [ ] Meaningful titles, layout, and colors.
+---
+
+## Dataset
+
+| File | Description |
+|------|-------------|
+| `Sales.xlsx` | E-commerce sales data (orders, customers, products) |
+
+**Typical model areas:** orders (dates, amounts), customers (segment), products (category) — then **DAX measures** for sales, quantity, profit.
+
+---
+
+## Tasks
+
+| Phase | Deliverables |
+|-------|--------------|
+| **Load & connection** | Import Excel; confirm refresh paths |
+| **Model** | Star schema: facts vs dimensions, relationships |
+| **DAX & report** | DAX measures, sales dashboard with cards/trends |
+| **QA** | Clean layout, meaningful titles, colors |
 
 Parent: [`../README.md`](../README.md)
