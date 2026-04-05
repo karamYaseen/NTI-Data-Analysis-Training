@@ -1,0 +1,41 @@
+{
+  "rows": 9992,
+  "columns": [
+    "Row ID",
+    "Order ID",
+    "Order Date",
+    "Ship Date",
+    "Ship Mode",
+    "Customer ID",
+    "Customer Name",
+    "Segment",
+    "Country/Region",
+    "City",
+    "State",
+    "Postal Code",
+    "Region",
+    "Product ID",
+    "Category",
+    "Sub-Category",
+    "Product Name",
+    "Sales",
+    "Quantity",
+    "Discount",
+    "Profit",
+    "Order Month",
+    "Profit Margin",
+    "Repeat Customer",
+    "First Order Month",
+    "Is New Customer"
+  ],
+  "date_range": {
+    "order_date_min": "2018-01-03 00:00:00",
+    "order_date_max": "2021-12-30 00:00:00"
+  },
+  "numeric_nulls": {
+    "Sales": 0,
+    "Profit": 0,
+    "Quantity": 0,
+    "Discount": 0
+  }
+}

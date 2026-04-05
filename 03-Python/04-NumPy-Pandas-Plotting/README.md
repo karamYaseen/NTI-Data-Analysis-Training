@@ -1,6 +1,6 @@
 # Python Data Analysis Topics - Fourth Day
 
-This section contains Python programming materials covering NumPy arrays, Pandas DataFrames, Matplotlib visualizations, and small automation patterns for data workflows.
+**My NTI coursework** — **Karam Yaseen.** **My** Day 4: NumPy, Pandas, Matplotlib, tiny automation patterns — **my** experiments.
 
 ## Topics Covered
 
@@ -65,6 +65,8 @@ After completing this section, you should be able to:
 - Build line, scatter, bar, and histogram plots with Matplotlib
 - Follow a small automation pattern from records to CSV
 - Connect CSV data to analysis and plots in a repeatable way
+
+**Parent:** [`../README.md`](../README.md) · **Previous:** [`../03-Functions-OOP/README.md`](../03-Functions-OOP/README.md) · **Next:** [`../05-Recap-Task/README.md`](../05-Recap-Task/README.md)
 
 ## Author
 

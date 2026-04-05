@@ -1,6 +1,6 @@
 # Python Advanced Topics - Second Day
 
-This section contains advanced Python programming materials covering unordered sequences, control flow, exception handling, and algorithmic problem-solving.
+**My NTI coursework** — **Karam Yaseen.** **My** Day 2 track: sets, dicts, control flow, exceptions, small algorithms — **how I** practiced it.
 
 ## Topics Covered
 
@@ -54,5 +54,8 @@ After completing this section, you should be able to:
 - Implement basic algorithms
 - Solve programming problems systematically
 
+**Parent:** [`../README.md`](../README.md) · **Previous:** [`../01-Python-Basics/README.md`](../01-Python-Basics/README.md) · **Next:** [`../03-Functions-OOP/README.md`](../03-Functions-OOP/README.md)
+
 ## Author
+
 Karam Yaseen

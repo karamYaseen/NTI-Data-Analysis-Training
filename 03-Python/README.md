@@ -1,6 +1,8 @@
-# Python — NTI Data Analysis Training
+# Python — my NTI track
 
-This folder is the **Python track**: basics through NumPy/Pandas/plots and a final recap (SQL, scraping, automation). The main narrative lives in one script.
+**My personal coursework** — **Karam Yaseen.** This is **my** Python path: **basics → NumPy/Pandas/plots → recap** (SQL from Python, scraping, automation). I drive most of the narrative from **`tutorial.py`**; the day folders are **my** exercises and notes.
+
+I came here after [`../01-Database-Design/`](../01-Database-Design/) and [`../02-SQL/`](../02-SQL/) in **my** order. **After this folder**, **my** next step was [`../04-Power Bi/`](../04-Power%20Bi/README.md).
 
 ---
 
@@ -35,13 +37,13 @@ python tutorial.py
 - Step-by-step explanations and runnable samples  
 - Progressive difficulty (basics → automation)  
 - Optional outputs: charts, CSV/Excel, text reports (see next section)  
-- Practice-style checkpoints and ideas for your own mini-projects  
+- Practice-style checkpoints and ideas for **my** side mini-projects  
 
 ---
 
 ## Generated files (optional)
 
-If the script reaches those sections, you may see files such as:
+When **I** ran those sections, **I** sometimes saw files like:
 
 | File pattern | Role |
 |--------------|------|
@@ -55,5 +57,9 @@ If the script reaches those sections, you may see files such as:
 The repo root **`.gitignore`** ignores these patterns so generated files are not committed by mistake. Re-run `tutorial.py` anytime to regenerate.
 
 ---
+
+**Capstone (after the Python track):** [`../06-Final-Project/README.md`](../06-Final-Project/README.md) — script + notebook.
+
+**Parent:** [`../README.md`](../README.md)
 
 **Author:** Karam Yaseen

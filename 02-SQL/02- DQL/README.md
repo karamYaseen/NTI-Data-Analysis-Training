@@ -1,10 +1,10 @@
-# SQL – DQL (Data Query Language) - Basic Queries
+# SQL — DQL — my basic queries
 
-This section contains foundational SQL query tasks focusing on retrieving and filtering data using DQL (Data Query Language). These exercises help you master the SELECT statement and WHERE clause.
+**My NTI coursework** — **Karam Yaseen.** **My** first query drills: `SELECT`, `WHERE`, simple joins — **how I** practiced pulling and filtering data.
 
-## 📚 Section Purpose
+## What I practiced here
 
-Learn to:
+**I** worked on:
 - Write basic SELECT statements
 - Filter data with WHERE clauses
 - Use comparison and logical operators
@@ -12,13 +12,13 @@ Learn to:
 - Calculate derived values
 - Access related data through simple joins
 
-## 📁 Files in This Folder
+## Files in this folder
 
 - `README.md` - This documentation (with explanation and guidance)
 - `SQLQuery2.sql` - Solution queries for basic tasks
 - `SQLQuery3.sql` - Alternative implementations and examples
 
-## 🎯 Basic Queries Exercise (Tasks 1-9)
+## Basic queries exercise (Tasks 1–9)
 
 These introductory queries teach fundamental SQL skills using single-table and simple multi-table operations.
 
@@ -151,7 +151,7 @@ WHERE DeptNo = 10;
 
 ---
 
-## 💡 Key Concepts for Basic Queries
+## Key concepts for basic queries
 
 ### SELECT Statement Structure
 ```
@@ -204,23 +204,23 @@ FROM Orders;
 - Filter for NULL: `WHERE column IS NULL`
 - Filter out NULL: `WHERE column IS NOT NULL`
 
-## 🚀 Difficulty Progression
+## Difficulty progression
 
 1. **Very Easy**: Tasks 1, 2, 3 (Simple column selection)
 2. **Easy**: Tasks 5, 8, 9 (Basic WHERE filtering)
 3. **Medium**: Tasks 4, 6, 7 (Expressions and calculations)
 
-## 📊 Expected Results
+## Expected results
 
 After completing these tasks, you'll be comfortable with:
-- ✅ Writing SELECT statements
-- ✅ Filtering with WHERE clauses
-- ✅ Creating meaningful column aliases
-- ✅ Calculating derived values
-- ✅ Comparing different data types
-- ✅ Building blocks for complex queries
+- Writing SELECT statements
+- Filtering with WHERE clauses
+- Creating meaningful column aliases
+- Calculating derived values
+- Comparing different data types
+- Building blocks for complex queries
 
-## 🎓 Related Concepts (Learn Next)
+## Related concepts (learn next)
 
 These basic queries lead to more complex patterns:
 - **JOIN operations**: Combine data from multiple tables formally
@@ -229,7 +229,7 @@ These basic queries lead to more complex patterns:
 - **Aggregate functions**: COUNT, SUM, AVG, MIN, MAX
 - **Subqueries**: Nested queries for complex filtering
 
-## 📝 Best Practices
+## Best practices
 
 1. **Always specify columns** - Avoid SELECT * in production
 2. **Use meaningful aliases** - Make your data understandable
@@ -238,7 +238,7 @@ These basic queries lead to more complex patterns:
 5. **Use WHERE wisely** - Filter early to reduce data processed
 6. **Comment your queries** - Explain the purpose
 
-## ⚠️ Common Mistakes to Avoid
+## Common mistakes to avoid
 
 | Mistake | Wrong | Correct |
 |---------|-------|---------|
@@ -247,7 +247,7 @@ These basic queries lead to more complex patterns:
 | Using AND when needed OR | Or/And | WHERE dept = 30 AND dept = 20 | WHERE dept IN (30, 20) |
 | Forgetting alias | SALARY * 12 | `SALARY * 12 AS AnnualSalary` |
 
-## 🔗 SQL Execution Tips
+## SQL execution tips
 
 1. **Execute once** - Run each query separately to check results
 2. **Compare results** - Check if output matches expectations
@@ -255,13 +255,12 @@ These basic queries lead to more complex patterns:
 4. **Use meaningful names** - Column aliases improve understanding
 5. **Document findings** - Note insights from query results
 
-## 👤 Author
+**Parent:** [`../README.md`](../README.md) · **Previous:** [`../01- Create DB & Insert Data/README.md`](../01-%20Create%20DB%20&%20Insert%20Data/README.md) · **Next:** [`../03- Advanced Queries/README.md`](../03-%20Advanced%20Queries/README.md)
+
+## Author
 
 Karam Yaseen
 
 ---
 
-**Section Level**: Beginner  
-**Estimated Time**: 2-3 hours  
-**Prerequisites**: Basic database structure understanding  
-**Last Updated**: March 5, 2026
+**Level:** beginner · **Time:** ~2–3 hours · **Prerequisite:** schema from Create DB section · **Last updated:** April 2026

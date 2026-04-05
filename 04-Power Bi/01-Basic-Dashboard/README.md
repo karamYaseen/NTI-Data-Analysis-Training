@@ -1,22 +1,34 @@
-# Basic Dashboard Module — Kickstarter Projects
+# Basic Dashboard — Kickstarter (my lab)
 
-Technical assessment: **Connect to CSV data**, **shape in Power Query**, create **KPI cards and visuals**, ensure **explorable layout**.
+**My NTI coursework** — **Karam Yaseen.** **What I set out to do:** connect to **CSV** data, **shape** it in Power Query, build **KPIs and charts**, and keep **my** layout **easy to filter** with slicers — **my** way, not a template answer.
 
 ---
 
 ## Quick start
 
-1. Open Power BI Desktop
-2. Connect to CSVs in `Kickstarter-Projects-Data/`
-3. Shape data, build report, export PNG
+1. Install [Power BI Desktop](https://powerbi.microsoft.com/desktop/).
+2. Open a new report and **Get Data** → Text/CSV → files in `Kickstarter-Projects-Data/`.
+3. Apply transforms (types, filters), load, then build visuals on a canvas background from `assets/`.
+4. Save `Kickstarter Analytics Dashboard.pbix` and optional PNG exports for **my** portfolio.
 
-**Typical output:** `Kickstarter Analytics Dashboard.pbix`, optional PNG export.
+**Deliverables**
+
+- `Kickstarter Analytics Dashboard.pbix`
+- Optional PNG exports (examples): `Kickstarter Analytics Dashboard - main.png`, `Kickstarter Analytics Dashboard - Detail.png`, `Kickstarter Analytics Dashboard - LastVersion.png`
+
+**Charts to aim for (typical):** KPI row (project count, success rate, total raised USD), trend by month, breakdown by `main_category`, share by `state`, slicers (`main_category`, `country`, `state`, `currency`), optional map by country.
+
+**Assets**
+
+- **Canvas:** `assets/kickstarter_canvas_main.png`, `assets/kickstarter_canvas_detail.png` (minimal backgrounds — place real visuals on top)  
+- **Optional mockups:** `kickstarter_EXPECTED_main.png` / `kickstarter_EXPECTED_detail.png` if **I** draw layout-only previews (not required)  
+- **Icons:** `assets/icons/*.png` (transparent PNGs)
 
 ---
 
 ## Scenario
 
-Analyze Kickstarter crowdfunding data: project success rates, funding trends by category and time.
+Explore Kickstarter crowdfunding: success vs failure, funding over time, breakdowns by category and geography.
 
 ---
 
@@ -24,20 +36,26 @@ Analyze Kickstarter crowdfunding data: project success rates, funding trends by 
 
 | File | Description |
 |------|-------------|
-| `ks-projects-201612.csv` | Kickstarter projects data (2016) |
-| `ks-projects-201801.csv` | Kickstarter projects data (2018) |
+| `ks-projects-201612.csv` | Sample of projects (2016 export) |
+| `ks-projects-201801.csv` | Sample of projects (2018 export) |
 
-**Key columns:** ID, name, category, main_category, currency, deadline, goal, launched, pledged, state, backers, country, usd_pledged_real, usd_goal_real
+**Columns to know:** `ID`, `name`, `category`, `main_category`, `currency`, `deadline`, `goal`, `launched`, `pledged`, `state`, `backers`, `country`, `usd_pledged_real`, `usd_goal_real`
+
+**CSV size:** large files — **I** can keep CSVs local and gitignore `Kickstarter-Projects-Data/*.csv`, or use [Git LFS](https://git-lfs.com/) if **I** want them in git.
 
 ---
 
-## Tasks
+## What I walked through
 
-| Phase | Deliverables |
-|-------|--------------|
-| **Data & connection** | Connect to CSVs; fix paths if needed |
-| **Power Query** | Clean types, filters, select columns |
-| **Report** | KPI cards, time trends, category visuals, slicers |
-| **QA & export** | Export dashboard PNG |
+| Phase | What I did |
+|-------|------------|
+| **Connect** | Import CSVs; fix paths on **my** machine after clone |
+| **Power Query** | Types, filters, columns **I** cared about; optional success/pledge calcs |
+| **Report** | KPI row, trend, category, state/outcome, slicers — **my** layout |
+| **QA** | Sanity checks; slicers behave; PNG export when **I** wanted one |
 
-Parent: [`../README.md`](../README.md)
+**Next (for me):** [`../02- Modeling/README.md`](../02-%20Modeling/README.md)
+
+**Author:** Karam Yaseen — **my** dashboard, **my** trip.
+
+**Parent:** [`../README.md`](../README.md)

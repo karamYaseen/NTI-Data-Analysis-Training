@@ -1,22 +1,22 @@
-# Advanced SQL Queries - Complex Data Retrieval & Analysis
+# Advanced SQL — my deeper queries
 
-This section covers advanced SQL techniques for combining multiple tables, aggregating data, and solving complex business problems.
+**My NTI coursework** — **Karam Yaseen.** **My** stretch work: JOINs, aggregates, subqueries, trickier filters — **my** solutions in `SQLQuery1.sql`.
 
-## 📚 Section Purpose
+## What I practiced here
 
-Learn to:
+**I** worked on:
 - Combine data from multiple tables using JOINs
 - Aggregate and group data by categories
 - Write nested queries (subqueries)
 - Use advanced filtering techniques
 - Solve complex real-world data problems
 
-## 📁 Files in This Folder
+## Files in this folder
 
 - `README.md` - This documentation (with detailed explanations)
 - `SQLQuery1.sql` - Solution queries for advanced tasks
 
-## 🎯 Advanced Query Concepts
+## Advanced query concepts
 
 ### 1. JOINs - Combining Multiple Tables
 
@@ -236,7 +236,7 @@ FROM Employees;
 ```
 Categorizes each employee by salary range.
 
-## 🎓 Example Advanced Queries
+## Example advanced queries
 
 ### Example 1: Department Summary Report
 ```sql
@@ -285,7 +285,7 @@ WHERE e.Salary = (
 ```
 Shows the highest-paid employee in each department.
 
-## 💡 Key Patterns
+## Key patterns
 
 ### Pattern 1: Find Missing Data
 ```sql
@@ -317,7 +317,7 @@ FROM Employees;
 ```
 Ranks employees by salary within their department.
 
-## ⚠️ Common Advanced Query Mistakes
+## Common advanced query mistakes
 
 | Mistake | Problem | Solution |
 |---------|---------|----------|
@@ -327,7 +327,7 @@ Ranks employees by salary within their department.
 | Wrong subquery | Invalid results | Test subquery independently first |
 | Missing parentheses | Syntax error | GROUP parentheses around subqueries |
 
-## 🚀 Tips for Writing Advanced Queries
+## Tips for writing advanced queries
 
 1. **Start Simple** - Build complex queries step by step
 2. **Test Components** - Test JOINs before adding aggregates
@@ -336,7 +336,7 @@ Ranks employees by salary within their department.
 5. **Document Logic** - Add comments explaining the purpose
 6. **Verify Results** - Check record counts and sample data
 
-## 📖 Query Building Steps
+## Query building steps
 
 1. **Identify needed tables** - What data do you need?
 2. **Determine relationships** - How do tables connect?
@@ -347,16 +347,16 @@ Ranks employees by salary within their department.
 7. **Sort results** - ORDER BY clause
 8. **Limit output** - LIMIT clause if needed
 
-## 🎯 What You'll Learn
+## What you'll learn
 
 After completing advanced queries, you'll understand:
-- ✅ How to efficiently combine multiple tables
-- ✅ How to aggregate and summarize data
-- ✅ How to solve complex data problems
-- ✅ How to write optimized queries
-- ✅ How to analyze business data effectively
+- How to efficiently combine multiple tables
+- How to aggregate and summarize data
+- How to solve complex data problems
+- How to write optimized queries
+- How to analyze business data effectively
 
-## 📝 Best Practices
+## Best practices
 
 1. **Always use aliases** for table names in JOINs
 2. **Test WHERE conditions** before using with aggregates
@@ -365,7 +365,7 @@ After completing advanced queries, you'll understand:
 5. **Comment complex logic** - future you will thank you
 6. **Backup before modifying data** - UPDATE/DELETE are permanent
 
-## 🔗 Related Advanced Topics
+## Related advanced topics
 
 Once comfortable with these concepts, explore:
 - **Window Functions** - PARTITION BY, ROW_NUMBER(), RANK()
@@ -375,13 +375,12 @@ Once comfortable with these concepts, explore:
 - **Indexes** - Query performance optimization
 - **Transactions** - Multi-step atomic operations
 
-## 👤 Author
+**Parent:** [`../README.md`](../README.md) · **Previous:** [`../02- DQL/README.md`](../02-%20DQL/README.md) · **Next track:** [`../../03-Python/README.md`](../../03-Python/README.md)
+
+## Author
 
 Karam Yaseen
 
 ---
 
-**Section Level**: Advanced  
-**Estimated Time**: 4-6 hours  
-**Prerequisites**: Complete DQL section first  
-**Last Updated**: March 5, 2026
+**Level:** advanced · **Time:** ~4–6 hours · **Prerequisite:** DQL section · **Last updated:** April 2026

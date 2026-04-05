@@ -1,6 +1,6 @@
-# Python Programming Fundamentals - First Day
+# Python Programming Fundamentals — my Day 1
 
-This section contains Python programming materials covering basic concepts, ordered sequences (lists, tuples, strings), and practical exercises.
+**My NTI coursework** — **Karam Yaseen.** **I** worked through basics, ordered sequences (lists, tuples, strings), and exercises — **my** notes live in this folder.
 
 ## Topics Covered
 
@@ -53,5 +53,8 @@ After completing this section, you should be able to:
 - Implement basic algorithms and data processing
 - Write clean, readable Python code
 
+**Parent:** [`../README.md`](../README.md) · **Next:** [`../02-Sequences/README.md`](../02-Sequences/README.md)
+
 ## Author
+
 Karam Yaseen

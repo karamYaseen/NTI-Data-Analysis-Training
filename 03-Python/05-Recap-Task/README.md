@@ -1,6 +1,6 @@
-# Advanced Data Tools & Automation — Session 7 Recap
+# Advanced Data Tools & Automation — my Session 7 recap
 
-This section brings together SQL from Python, Pandas, web scraping (requests + BeautifulSoup), regular expressions, and small automation workflows similar to real data tasks.
+**My NTI coursework** — **Karam Yaseen.** **I** tied together SQL from Python, Pandas, scraping (requests + BeautifulSoup), regex, and small automation — **my** recap assignment and notes.
 
 ## Topics Covered
 
@@ -86,6 +86,8 @@ python Advanced.py
 - `lxml` or `html.parser` — Parser backend for BeautifulSoup
 - `openpyxl` — Read/write `.xlsx`
 - `re`, `smtplib`, `ssl`, `os` — Standard library
+
+**Parent:** [`../README.md`](../README.md) · **Previous:** [`../04-NumPy-Pandas-Plotting/README.md`](../04-NumPy-Pandas-Plotting/README.md) · **Next track:** [`../../04-Power Bi/README.md`](../../04-Power%20Bi/README.md)
 
 ## Author
 

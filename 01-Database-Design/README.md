@@ -1,67 +1,84 @@
 # Database Design Fundamentals
 
-This section contains comprehensive database design materials covering Entity-Relationship Diagrams (ERD), normalization, and relational mapping concepts.
+**My NTI coursework** — **Karam Yaseen.** This folder holds **my** ERD and mapping work (Musicana, Real Estate, Hospital, Airline): **how I** practiced entities, relationships, cardinality, and normalization (through 3NF). It is **my** study archive, not a generic textbook.
 
-## Prerequisites
+---
 
-- Understand tables, keys, and simple relationships
-- Can read diagrams
+## What I already had in mind
 
-## Topics Covered
+- Basic tables / PK / FK ideas  
+- I could read simple diagrams (and picked up Mermaid / draw.io as **I** went)
 
-- ERD fundamentals: entities, attributes, relationships, cardinality
-- Normalization (1NF–3NF) to reduce redundancy
-- Mapping ER models to tables (1:1, 1:N, N:M)
-- Four case studies: Musicana, Real‑Estate, Hospital, Airline
+---
 
-## Project Structure
+## Topics covered
 
-- `database_design_concepts.py` – detailed concepts
-- `01-ERD/` – four problem folders with diagrams
-- `02-Mapping/` – corresponding relational schemas
+- ERD basics: entities, attributes, relationships, cardinality  
+- Normalization (1NF–3NF) to cut redundancy and update anomalies  
+- Mapping ER models to tables (1:1, 1:N, M:N)  
+- Case studies: **Musicana**, **Real Estate**, **Hospital**, **Airline**
 
-Each problem folder includes a README and image.
+---
 
-## ERD Overview
+## Folder layout
 
-- **Musicana**: musicians, instruments, albums, songs (many-to-many links)
-- **Real Estate**: properties, owners, agents, sales
-- **Hospital**: patients, doctors, departments, treatments
-- **Airline**: flights, passengers, aircraft, airports
+| Path | Purpose |
+|------|---------|
+| `database_design_concepts.py` | Narrative concepts and examples (read alongside problems) |
+| `01-ERD/` | One folder per problem — task statement + **my** ERD |
+| `02-Mapping/` | **My** map from ERD → tables, keys, relationships |
 
-## Mapping Problems Overview
+Each problem folder has a **README** (and often diagram files).
 
-Each mapping problem converts the corresponding ERD into:
-- Relational tables with proper keys
-- Foreign key relationships
-- Normalized schema (1NF, 2NF, 3NF)
-- SQL table creation scripts
+---
 
-## How to Use
+## Case studies (short)
 
-1. Read the concepts file.
-2. Pick a problem, draw ERD, then check solution.
-3. Map ERD to tables and compare.
-4. Repeat; work alone or with peers.
+- **Musicana:** musicians, instruments, albums, songs (several M:N relationships)  
+- **Real Estate:** properties, owners, agents, sales  
+- **Hospital:** patients, staff, departments, treatments  
+- **Airline:** flights, passengers, aircraft, airports  
 
-#### Tips
+---
 
-    - Start ERD with entities, then add relationships
-    - Normalize to 3NF but don’t overthink it
-    - Draw first, map later
-    - Avoid redundant attributes and missing relations
-    
+## What I aimed to produce (mapping)
 
-## Related Resources
+For each case **I** tried to deliver:
 
-These materials lead to:
-- **SQL Module** (../02-SQL/): Implement these designs using SQL
+- Tables with primary and foreign keys  
+- Relationship lines matching cardinality  
+- Schema in **third normal form** where it made sense for me  
+- Optional: `CREATE TABLE` scripts when I moved into [`../02-SQL/`](../02-SQL/)
 
-## Tools and Technologies
+---
 
-- **ERD Design**: Mermaid, Draw.io
-- **Documentation**: Markdown, GitHub
+## How I used this folder
 
+1. Skim `database_design_concepts.py`.  
+2. Open **01-ERD** for a problem; sketch **my** ERD (paper, draw.io, or Mermaid).  
+3. Open **02-Mapping** for the same problem; write **my** tables and keys.  
+4. Compare with class solutions when I had them; iterate **my** way.
 
-## Author
-Karam Yaseen
+**What worked for me**
+
+- Entities first, then relationships and cardinalities.  
+- 3NF as a target without over-normalizing toy examples.  
+- ERD on paper before table lists.  
+- Watch for missing entities, weak M:N handling, redundant attributes.
+
+---
+
+## What I did next
+
+**[`../02-SQL/`](../02-SQL/)** — where **I** turned designs into DDL/DML and queries.
+
+---
+
+## Tools
+
+- **Diagrams:** Mermaid, [draw.io](https://app.diagrams.net/)  
+- **Docs:** Markdown (this repo)
+
+**Parent:** [`../README.md`](../README.md)
+
+**Author:** Karam Yaseen — personal coursework, **my** way.

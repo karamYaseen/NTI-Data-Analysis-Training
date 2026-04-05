@@ -28,3 +28,7 @@ Prepare an E-R diagram for a real estate firm that lists properties for sale.
 ## Tools Used
 
 - Mermaid
+
+---
+
+**Mapping:** [`../../02-Mapping/Problem 2 Real Estate Firm/README.md`](../../02-Mapping/Problem%202%20Real%20Estate%20Firm/README.md) · **Parent:** [`../../README.md`](../../README.md)

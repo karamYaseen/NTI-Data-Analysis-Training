@@ -28,3 +28,7 @@ Design a conceptual schema for Musicana. Be sure to indicate all keys and cardin
 ## Tools Used
 
 - Mermaid
+
+---
+
+**Mapping (relational tables):** [`../../02-Mapping/Problem 1 Musicana Records/README.md`](../../02-Mapping/Problem%201%20Musicana%20Records/README.md) · **Parent:** [`../../README.md`](../../README.md)

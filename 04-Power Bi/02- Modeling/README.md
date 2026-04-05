@@ -1,22 +1,31 @@
-# Data Modeling Module — E-Commerce Sales
+# E‑Commerce modeling — my Power BI lab
 
-Technical assessment: **Load Excel data**, build **star schema model**, create **DAX measures**, design **sales dashboard**.
-
----
-
-## Quick start
-
-1. Open Power BI Desktop
-2. Load `Sales.xlsx`
-3. Model data, add measures, build dashboard
-
-**Typical output:** `E-Commerce Sales.pbix`, optional screenshot PNG.
+**My NTI coursework** — **Karam Yaseen.** **What I set out to do:** import **`Sales.xlsx`**, build **my** star schema, write **my** DAX measures, and ship a sales dashboard **my** way.
 
 ---
 
-## Scenario
+## Quick start (how I built it)
 
-Model e-commerce sales data in a star schema: facts and dimensions, relationships, DAX KPIs.
+1. Power BI Desktop → **Get Data** → Excel → `Sales.xlsx`.
+2. **Model view:** relate fact ↔ dimensions (many-to-one from fact) **as I defined them**.
+3. **Date table** when the lab called for time intelligence — **I** mark it as a date table.
+4. Measures (sales, quantity, profit, margin — **my** formulas) on `assets/ecommerce_canvas_*.png` backgrounds.
+
+**What I produced:** `E-Commerce Sales.pbix`, plus optional PNGs (e.g. `E-Commerce Sales - main.png`, `E-Commerce Sales - Details.png`) for **my** portfolio.
+
+**Charts I aimed for:** KPI cards, sales over time, category/segment breakdowns, matrix or table for top products — **my** layout choices.
+
+**Assets**
+
+- **Canvas:** `assets/ecommerce_canvas_main.png`, `assets/ecommerce_canvas_detail.png`  
+- **Optional mockups:** `ecommerce_EXPECTED_main.png`, `ecommerce_EXPECTED_detail.png` (not required)  
+- **Icons:** `assets/icons/*.png`
+
+---
+
+## What this lab was about (for me)
+
+**I** practiced dimensional modeling: fact at line/order grain, product + customer dimensions, DAX for KPIs and margins — **my** interpretation of the brief.
 
 ---
 
@@ -24,19 +33,23 @@ Model e-commerce sales data in a star schema: facts and dimensions, relationship
 
 | File | Description |
 |------|-------------|
-| `Sales.xlsx` | E-commerce sales data (orders, customers, products) |
+| `Sales.xlsx` | Orders / lines, customers, products (exact sheets vary by export) |
 
-**Typical model areas:** orders (dates, amounts), customers (segment), products (category) — then **DAX measures** for sales, quantity, profit.
+**Model focus:** facts (amounts, quantities, dates) vs dimensions (product hierarchy, customer segment); **DAX** for totals, counts, and profit.
 
 ---
 
-## Tasks
+## What I walked through
 
-| Phase | Deliverables |
-|-------|--------------|
-| **Load & connection** | Import Excel; confirm refresh paths |
-| **Model** | Star schema: facts vs dimensions, relationships |
-| **DAX & report** | DAX measures, sales dashboard with cards/trends |
-| **QA** | Clean layout, meaningful titles, colors |
+| Phase | What I delivered |
+|-------|------------------|
+| **Load** | Import Excel; **Transform Data** **my** way; fix paths when **I** cloned on a new PC |
+| **Model** | **My** star schema, relationships, hierarchies where **I** wanted them |
+| **DAX & report** | **My** measure table; cards, trends, breakdowns, slicers |
+| **QA** | **I** checked visuals vs measures; titles and colors **I** liked |
 
-Parent: [`../README.md`](../README.md)
+**Previous:** [`../01-Basic-Dashboard/README.md`](../01-Basic-Dashboard/README.md) · **Next:** [`../03- Direct Query/README.md`](../03-%20Direct%20Query/README.md)
+
+**Author:** Karam Yaseen — **my** lab, **my** report.
+
+**Parent:** [`../README.md`](../README.md)

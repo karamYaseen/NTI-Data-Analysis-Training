@@ -1,8 +1,9 @@
-#  Mapping – Lab 1
+# Mapping — Problem 4 (Airline Company)
 
-## 🎯 Task
+## What I did
 
-### Problem 4
-![Problem 4](https://github.com/user-attachments/assets/c8846f8b-5664-4fe1-b99b-3cd2ad914744)
+**I** mapped **my** **Airline** ERD ([`../../01-ERD/Problem4_Airline/README.md`](../../01-ERD/Problem4_Airline/README.md)) to **my** tables — flights, crew, passengers, aircraft, airports, transactions — **my** reading of the brief.
 
 ---
+
+**ERD problem:** [`../../01-ERD/Problem4_Airline/README.md`](../../01-ERD/Problem4_Airline/README.md) · **Parent:** [`../../README.md`](../../README.md)

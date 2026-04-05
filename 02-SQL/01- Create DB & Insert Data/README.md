@@ -1,8 +1,8 @@
-# SQL Database Creation & Data Insertion
+# SQL Database Creation & Data Insertion — my setup scripts
 
-This section covers the foundational steps for setting up a SQL database, including table creation (DDL) and initial data population (DML).
+**My NTI coursework** — **Karam Yaseen.** **I** used these steps to create **my** training database: DDL for tables, then DML to load seed data — **my** copy of the class scripts.
 
-## 📋 Overview
+## Overview
 
 Before you can query data, you need to:
 1. Define the database structure (create tables)
@@ -11,14 +11,14 @@ Before you can query data, you need to:
 
 This folder contains the SQL scripts to accomplish all three steps.
 
-## 📁 Files in This Folder
+## Files in this folder
 
 - `README.md` - This documentation file
 - `Schema.png` - Visual diagram of the database structure
 - `Create DB.sql` - DDL script to create all tables and constraints
 - `Insert Data.sql` - DML script to insert initial data
 
-## 🔧 What is DDL (Data Definition Language)?
+## What is DDL (Data Definition Language)?
 
 DDL commands define the structure of a database:
 - **CREATE TABLE** - Defines table structure, columns, and data types
@@ -38,7 +38,7 @@ CREATE TABLE employees (
 );
 ```
 
-## 📊 Database Schema
+## Database schema
 
 ### Tables in This Database
 
@@ -72,7 +72,7 @@ CREATE TABLE employees (
    - Primary Key: Composite (Employee SSN + Dependent Name)
    - Foreign Key: Employee SSN
 
-## 🚀 How to Execute
+## How to execute
 
 ### Step 1: Execute Create DB.sql
 ```
@@ -109,7 +109,7 @@ SELECT * FROM Employees LIMIT 5;
 SELECT * FROM Departments;
 ```
 
-## 📚 Understanding the Schema from Schema.png
+## Understanding the schema from Schema.png
 
 The visual diagram shows:
 - **Entity boxes** represent each table
@@ -142,7 +142,7 @@ The visual diagram shows:
    - An employee can supervise multiple employees
    - An employee has one supervisor (or NULL for top manager)
 
-## 💡 Key Concepts
+## Key concepts
 
 ### Primary Key (PK)
 - Uniquely identifies each record in a table
@@ -173,7 +173,7 @@ Rules that ensure data quality:
 - `CHECK` - Validates with a condition
 - `DEFAULT` - Provides default value if not specified
 
-## 📝 Sample Data Explanation
+## Sample data explanation
 
 The Insert Data.sql script populates realistic sample data:
 - **Employees**: Various employees in different departments with different salaries
@@ -184,7 +184,7 @@ The Insert Data.sql script populates realistic sample data:
 
 This sample data is used for all queries in the DQL section.
 
-## ⚠️ Important Notes
+## Important notes
 
 1. **Referential Integrity**: Foreign keys prevent invalid data
    - Cannot insert an employee for a non-existent department
@@ -201,7 +201,7 @@ This sample data is used for all queries in the DQL section.
 4. **NULL Values**: Some columns allow NULL (unknown or not applicable)
    - Example: Supervisor_SSN is NULL for top-level managers
 
-## 🔄 Re-creating the Database
+## Re-creating the database
 
 If you need to start fresh:
 
@@ -216,25 +216,25 @@ DROP TABLE Departments;
 -- Then run Create DB.sql again
 ```
 
-## 🎯 What You'll Learn
+## What you'll learn
 
 After executing these scripts, you'll understand:
-- ✅ How to define table structures
-- ✅ How to establish relationships between tables
-- ✅ Data type selection for different information
-- ✅ Constraint usage for data validation
-- ✅ How to populate a database with initial data
-- ✅ Database normalization principles
+- How to define table structures
+- How to establish relationships between tables
+- Data type selection for different information
+- Constraint usage for data validation
+- How to populate a database with initial data
+- Database normalization principles
 
-## 📖 Next Steps
+## Next steps
 
 Once your database is created and populated:
-1. Proceed to **02-SQL/02-DQL** to write basic queries
+1. Proceed to **`02- DQL/`** to write basic queries
 2. Practice simple SELECT statements
 3. Learn filtering with WHERE clauses
 4. Then move to advanced queries with JOINs and aggregations
 
-## 💡 SQL Execution Tips
+## SQL execution tips
 
 1. **Read the script first** - Understand what's being created
 2. **Execute in sections** - Run CREATE TABLE statements separately if needed
@@ -242,7 +242,7 @@ Once your database is created and populated:
 4. **Verify the data** - Run SELECT queries to confirm data is inserted
 5. **Keep backup copies** - Save the scripts safely
 
-## 📞 Troubleshooting
+## Troubleshooting
 
 | Error | Cause | Solution |
 |-------|-------|----------|
@@ -251,10 +251,12 @@ Once your database is created and populated:
 | "Duplicate entry for key" | Inserting duplicate PK values | Check data for duplicates |
 | "Column not found" | Wrong column name | Verify column names in schema |
 
-## 👤 Author
+**Parent:** [`../README.md`](../README.md) · **Next:** [`../02- DQL/README.md`](../02-%20DQL/README.md)
+
+## Author
 
 Karam Yaseen
 
 ---
 
-**Last Updated**: March 5, 2026
+**Last updated:** April 2026

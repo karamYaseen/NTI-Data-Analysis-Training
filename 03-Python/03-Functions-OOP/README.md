@@ -1,6 +1,6 @@
 # Python Functions & OOP - Third Day
 
-This section contains Python programming materials covering functions and object-oriented programming (OOP).
+**My NTI coursework** — **Karam Yaseen.** **My** Day 3: functions, lambdas, OOP — **my** solutions and notes.
 
 ## Topics Covered
 
@@ -62,5 +62,8 @@ After completing this section, you should be able to:
 - Understand and use magic methods
 - Build complex programs using OOP principles
 
+**Parent:** [`../README.md`](../README.md) · **Previous:** [`../02-Sequences/README.md`](../02-Sequences/README.md) · **Next:** [`../04-NumPy-Pandas-Plotting/README.md`](../04-NumPy-Pandas-Plotting/README.md)
+
 ## Author
+
 Karam Yaseen

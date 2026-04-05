@@ -1,8 +1,9 @@
-#  Mapping – Lab 1
+# Mapping — Problem 2 (Real Estate Firm)
 
-## 🎯 Task
+## What I did
 
-### Problem 2
-![Problem 2](https://github.com/user-attachments/assets/12877f0e-2d45-45da-9952-b08e4492fc58)
+**I** mapped **my** **Real Estate** ERD ([`../../01-ERD/Problem2_RealEstate/README.md`](../../01-ERD/Problem2_RealEstate/README.md)) to **my** **normalized tables** — keys, relationships, ownership % where the brief asked.
 
 ---
+
+**ERD problem:** [`../../01-ERD/Problem2_RealEstate/README.md`](../../01-ERD/Problem2_RealEstate/README.md) · **Parent:** [`../../README.md`](../../README.md)

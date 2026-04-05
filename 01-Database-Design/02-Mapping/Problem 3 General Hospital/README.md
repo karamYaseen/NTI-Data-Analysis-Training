@@ -1,8 +1,9 @@
-#  Mapping – Lab 1
+# Mapping — Problem 3 (General Hospital)
 
-## 🎯 Task
+## What I did
 
-### Problem 3
-![Problem 3](https://github.com/user-attachments/assets/22906e67-a3c0-4232-bc35-cc388969ad89)
+**I** mapped **my** **Hospital** ERD ([`../../01-ERD/Problem3_Hospital/README.md`](../../01-ERD/Problem3_Hospital/README.md)) to **my** tables (patients, staff, wards, drugs, treatments, …) with **my** keys and integrity rules.
 
 ---
+
+**ERD problem:** [`../../01-ERD/Problem3_Hospital/README.md`](../../01-ERD/Problem3_Hospital/README.md) · **Parent:** [`../../README.md`](../../README.md)

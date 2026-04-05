@@ -36,3 +36,7 @@ Major airlines companies keep database with information on airlines.
 ## Tools Used
 
 - Mermaid
+
+---
+
+**Mapping:** [`../../02-Mapping/Problem 4 Airline Company/README.md`](../../02-Mapping/Problem%204%20Airline%20Company/README.md) · **Parent:** [`../../README.md`](../../README.md)
